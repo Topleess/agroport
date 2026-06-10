@@ -36,7 +36,7 @@ async def upsert_user(
 
 async def run_seed() -> None:
     await Tortoise.init(config=TORTOISE_ORM)
-    admin = await upsert_user("admin@agroport.local", "admin12345", "Админ", "Агропорт", True)
+    await upsert_user("admin@agroport.local", "admin12345", "Админ", "Агропорт", True)
     farmer = await upsert_user("farmer@agroport.local", "farmer12345", "Иван", "Фермер")
     organization = await Organization.get_or_none(inn="500100000001")
     if organization is None:

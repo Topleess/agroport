@@ -1,0 +1,115 @@
+name: ci-cd
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: agroport-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Build and lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Frontend install
+        working-directory: frontend
+        run: npm ci
+
+      - name: Frontend lint
+        working-directory: frontend
+        env:
+          NEXT_PUBLIC_API_URL: http://127.0.0.1:8102/api/v1
+        run: npm run lint
+
+      - name: Frontend build
+        working-directory: frontend
+        env:
+          NEXT_PUBLIC_API_URL: http://127.0.0.1:8102/api/v1
+        run: npm run build
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: backend/pyproject.toml
+
+      - name: Backend install
+        working-directory: backend
+        run: python -m pip install --upgrade pip && pip install .[dev]
+
+      - name: Backend lint
+        working-directory: backend
+        run: ruff check app
+
+      - name: Backend compile check
+        working-directory: backend
+        run: python -m compileall app
+
+  deploy:
+    name: Deploy to Nikolai
+    needs: checks
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Start ssh-agent
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
+
+      - name: Add host key
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+        run: ssh-keyscan -p "${DEPLOY_PORT:-22}" -H "${DEPLOY_HOST}" >> ~/.ssh/known_hosts
+
+      - name: Deploy
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          ssh -p "${DEPLOY_PORT:-22}" "${DEPLOY_USER}@${DEPLOY_HOST}" "DEPLOY_PATH='${DEPLOY_PATH:-/opt/apps/agroport}' bash -se" <<'EOF'
+          set -euo pipefail
+          cd "$DEPLOY_PATH"
+
+          STASHED=0
+          if [ -n "$(git status --porcelain)" ]; then
+            git stash push --include-untracked --message "ci-deploy"
+            STASHED=1
+          fi
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          docker compose build
+          docker compose up -d postgres
+          docker compose run --rm backend aerich upgrade
+          docker compose up -d
+          docker compose ps
+          docker compose logs --tail=50
+          curl -fsS http://127.0.0.1:3102 >/dev/null
+          curl -fsS http://127.0.0.1:8102/api/v1/health >/dev/null
+          curl -fsS http://127.0.0.1:8102/api/v1/health/db >/dev/null
+
+          if [ "$STASHED" -eq 1 ]; then
+            git stash pop --index stash@{0} || true
+          fi
+          EOF

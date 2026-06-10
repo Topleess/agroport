@@ -103,3 +103,11 @@ Frontend: `http://localhost:3000`.
 - Перевести auth на httpOnly cookie/session.
 - Расширить админку пользователями и аудитом действий.
 - Развивать placeholder-разделы в реальные сценарии заявок, marketplace, мер поддержки и сервисов.
+
+## Development and CI/CD
+
+- Локально работай в feature-ветках и пушь готовое в `main`.
+- GitHub Actions запускает проверку frontend/backend на каждый PR и push в `main`.
+- После успешного push в `main` workflow подключается по SSH к серверу и делает `git reset --hard origin/main`, `docker compose build`, `docker compose up -d`, `aerich upgrade`, затем smoke-check health endpoints.
+- `.env` хранится только на сервере и не должен попадать в репозиторий.
+- Для деплоя нужны GitHub Secrets: `DEPLOY_HOST`, `DEPLOY_PORT`, `DEPLOY_USER`, `DEPLOY_PATH`, `DEPLOY_SSH_KEY`.
