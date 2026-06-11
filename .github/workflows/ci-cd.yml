@@ -99,13 +99,15 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
 
-          docker compose build
+          docker compose build --pull --no-cache
           docker compose up -d postgres
           docker compose run --rm backend aerich upgrade
-          docker compose up -d
+          docker compose up -d --force-recreate --remove-orphans
           docker compose ps
           docker compose logs --tail=50
           curl -fsS http://127.0.0.1:3102 >/dev/null
+          curl -fsS http://127.0.0.1:3102/admin/login >/dev/null
+          curl -fsS http://127.0.0.1:3102/solutions >/dev/null
           curl -fsS http://127.0.0.1:8102/api/v1/health >/dev/null
           curl -fsS http://127.0.0.1:8102/api/v1/health/db >/dev/null
 
