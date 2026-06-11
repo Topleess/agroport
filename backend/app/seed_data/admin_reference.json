@@ -1,0 +1,5229 @@
+{
+  "source": "agroport_reference_dictionaries_v0_4.xlsx",
+  "dictionaries": [
+    {
+      "code": "Dict_Solution_Layers",
+      "name": "Solution Layers",
+      "description": "Imported from Dict_Solution_Layers",
+      "items": [
+        {
+          "code": "SW",
+          "label": "Software",
+          "description": "Программное обеспечение и цифровые платформы",
+          "sort_order": 0
+        },
+        {
+          "code": "HW",
+          "label": "Hardware",
+          "description": "Оборудование, устройства, датчики, робототехника",
+          "sort_order": 1
+        },
+        {
+          "code": "ITS",
+          "label": "IT Services",
+          "description": "Интеграция, внедрение, консалтинг, сопровождение",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "code": "Dict_Partner_Types",
+      "name": "Partner Types",
+      "description": "Imported from Dict_Partner_Types",
+      "items": [
+        {
+          "code": "vendor",
+          "label": "Вендор / разработчик",
+          "description": "Создает и продает собственный продукт",
+          "sort_order": 0
+        },
+        {
+          "code": "integrator",
+          "label": "Интегратор",
+          "description": "Внедряет чужие и/или собственные решения",
+          "sort_order": 1
+        },
+        {
+          "code": "distributor",
+          "label": "Дистрибьютор",
+          "description": "Продает и сопровождает решения как представитель",
+          "sort_order": 2
+        },
+        {
+          "code": "hardware_manufacturer",
+          "label": "Производитель оборудования",
+          "description": "Производит устройства или оборудование",
+          "sort_order": 3
+        },
+        {
+          "code": "service_provider",
+          "label": "Сервисная компания",
+          "description": "Оказывает услугу, не обязательно продает ПО",
+          "sort_order": 4
+        },
+        {
+          "code": "consulting",
+          "label": "Консалтинг",
+          "description": "Проектирование, аудит, методология, бизнес-процессы",
+          "sort_order": 5
+        },
+        {
+          "code": "data_provider",
+          "label": "Поставщик данных",
+          "description": "Поставляет данные, API, аналитические отчеты",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "code": "Dict_Customer_Types",
+      "name": "Customer Types",
+      "description": "Imported from Dict_Customer_Types",
+      "items": [
+        {
+          "code": "kfh",
+          "label": "КФХ",
+          "description": "Крестьянское фермерское хозяйство",
+          "sort_order": 0
+        },
+        {
+          "code": "ip",
+          "label": "ИП",
+          "description": "Индивидуальный предприниматель",
+          "sort_order": 1
+        },
+        {
+          "code": "ooo_sme",
+          "label": "ООО / МСП",
+          "description": "Малое или среднее агропредприятие",
+          "sort_order": 2
+        },
+        {
+          "code": "spk",
+          "label": "СПК / кооператив",
+          "description": "Сельхозкооператив",
+          "sort_order": 3
+        },
+        {
+          "code": "agroholding",
+          "label": "Агрохолдинг",
+          "description": "Крупная группа компаний",
+          "sort_order": 4
+        },
+        {
+          "code": "processor",
+          "label": "Переработчик",
+          "description": "Пищевая или агроперерабатывающая компания",
+          "sort_order": 5
+        },
+        {
+          "code": "elevator",
+          "label": "Элеватор / зернохранилище",
+          "description": "Хранение и перевалка зерна",
+          "sort_order": 6
+        },
+        {
+          "code": "greenhouse",
+          "label": "Тепличный комплекс",
+          "description": "Защищенный грунт",
+          "sort_order": 7
+        },
+        {
+          "code": "livestock_complex",
+          "label": "Животноводческий комплекс",
+          "description": "КРС, свиноводство, птица и др.",
+          "sort_order": 8
+        },
+        {
+          "code": "public_org",
+          "label": "Госорган / учреждение",
+          "description": "Минсельхоз, ГБУ, вуз, лаборатория",
+          "sort_order": 9
+        }
+      ]
+    },
+    {
+      "code": "Dict_Farm_Scales",
+      "name": "Farm Scales",
+      "description": "Imported from Dict_Farm_Scales",
+      "items": [
+        {
+          "code": "micro",
+          "label": "Микро",
+          "description": "До 100 га / до 50 голов / локальная деятельность",
+          "sort_order": 0
+        },
+        {
+          "code": "small",
+          "label": "Малое",
+          "description": "100–1 000 га / 50–500 голов",
+          "sort_order": 1
+        },
+        {
+          "code": "medium",
+          "label": "Среднее",
+          "description": "1 000–10 000 га / 500–5 000 голов",
+          "sort_order": 2
+        },
+        {
+          "code": "large",
+          "label": "Крупное",
+          "description": "10 000+ га / 5 000+ голов",
+          "sort_order": 3
+        },
+        {
+          "code": "enterprise",
+          "label": "Корпоративное",
+          "description": "Агрохолдинг / группа компаний / сеть объектов",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "code": "Dict_Digital_Maturity",
+      "name": "Digital Maturity",
+      "description": "Imported from Dict_Digital_Maturity",
+      "items": [
+        {
+          "code": "none",
+          "label": "Нет цифрового учета",
+          "description": "Бумага, звонки, мессенджеры, минимальный Excel",
+          "sort_order": 0
+        },
+        {
+          "code": "basic",
+          "label": "Базовая",
+          "description": "Excel, 1С-бухгалтерия, отдельные сервисы",
+          "sort_order": 1
+        },
+        {
+          "code": "operational",
+          "label": "Операционная",
+          "description": "Есть учет, 1С/ERP, телематика или отраслевое ПО",
+          "sort_order": 2
+        },
+        {
+          "code": "integrated",
+          "label": "Интегрированная",
+          "description": "Связанные системы, API, регламентированный ввод данных",
+          "sort_order": 3
+        },
+        {
+          "code": "data_driven",
+          "label": "Data-driven",
+          "description": "BI, датчики, аналитика, автоматизация решений",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "code": "Dict_Implementation",
+      "name": "Implementation",
+      "description": "Imported from Dict_Implementation",
+      "items": [
+        {
+          "code": "self_service",
+          "label": "Self-service",
+          "description": "Пользователь подключает сам",
+          "sort_order": 0
+        },
+        {
+          "code": "assisted",
+          "label": "Assisted",
+          "description": "Есть помощь менеджера/эксперта",
+          "sort_order": 1
+        },
+        {
+          "code": "project",
+          "label": "Проектное внедрение",
+          "description": "Обследование, ТЗ, этапы, приемка",
+          "sort_order": 2
+        },
+        {
+          "code": "phygital",
+          "label": "Phygital",
+          "description": "Цифровой продукт + выезд/локальные партнеры",
+          "sort_order": 3
+        },
+        {
+          "code": "turnkey",
+          "label": "Под ключ",
+          "description": "Поставка, внедрение, обучение, сопровождение",
+          "sort_order": 4
+        },
+        {
+          "code": "pilot",
+          "label": "Пилот",
+          "description": "Ограниченная проверка на части хозяйства",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "code": "Dict_Deployment",
+      "name": "Deployment",
+      "description": "Imported from Dict_Deployment",
+      "items": [
+        {
+          "code": "saas",
+          "label": "SaaS",
+          "description": "Облачный сервис",
+          "sort_order": 0
+        },
+        {
+          "code": "on_premise",
+          "label": "On-premise",
+          "description": "Установка в контуре клиента",
+          "sort_order": 1
+        },
+        {
+          "code": "hybrid",
+          "label": "Hybrid",
+          "description": "Гибридная модель",
+          "sort_order": 2
+        },
+        {
+          "code": "mobile_app",
+          "label": "Mobile app",
+          "description": "Мобильное приложение",
+          "sort_order": 3
+        },
+        {
+          "code": "hardware_software",
+          "label": "Hardware + Software",
+          "description": "Оборудование + ПО",
+          "sort_order": 4
+        },
+        {
+          "code": "managed_service",
+          "label": "Managed service",
+          "description": "Управляемая услуга",
+          "sort_order": 5
+        },
+        {
+          "code": "api_data",
+          "label": "API / Data product",
+          "description": "Доступ к данным или API",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "code": "Dict_Payment_Models",
+      "name": "Payment Models",
+      "description": "Imported from Dict_Payment_Models",
+      "items": [
+        {
+          "code": "subscription",
+          "label": "Подписка",
+          "description": "Ежемесячно/ежегодно",
+          "sort_order": 0
+        },
+        {
+          "code": "per_hectare",
+          "label": "За гектар",
+          "description": "Цена зависит от площади",
+          "sort_order": 1
+        },
+        {
+          "code": "per_head",
+          "label": "За голову",
+          "description": "Цена зависит от поголовья",
+          "sort_order": 2
+        },
+        {
+          "code": "per_user",
+          "label": "За пользователя",
+          "description": "Цена зависит от числа пользователей",
+          "sort_order": 3
+        },
+        {
+          "code": "license",
+          "label": "Лицензия",
+          "description": "Разовая покупка лицензии",
+          "sort_order": 4
+        },
+        {
+          "code": "project_fee",
+          "label": "Проектная стоимость",
+          "description": "Стоимость определяется проектом",
+          "sort_order": 5
+        },
+        {
+          "code": "equipment_sale",
+          "label": "Продажа оборудования",
+          "description": "Покупка устройств/оборудования",
+          "sort_order": 6
+        },
+        {
+          "code": "commission",
+          "label": "Комиссия",
+          "description": "Процент от сделки/услуги",
+          "sort_order": 7
+        },
+        {
+          "code": "freemium",
+          "label": "Freemium",
+          "description": "Базовый функционал бесплатно, расширенный платно",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "code": "Dict_Economic_Effects",
+      "name": "Economic Effects",
+      "description": "Imported from Dict_Economic_Effects",
+      "items": [
+        {
+          "code": "cost_reduction",
+          "label": "Снижение затрат",
+          "description": "Прямое сокращение затрат",
+          "sort_order": 0
+        },
+        {
+          "code": "revenue_growth",
+          "label": "Рост выручки",
+          "description": "Дополнительная выручка или цена реализации",
+          "sort_order": 1
+        },
+        {
+          "code": "loss_reduction",
+          "label": "Снижение потерь",
+          "description": "Меньше брака, падежа, потерь урожая",
+          "sort_order": 2
+        },
+        {
+          "code": "time_saving",
+          "label": "Экономия времени",
+          "description": "Сокращение трудозатрат",
+          "sort_order": 3
+        },
+        {
+          "code": "risk_reduction",
+          "label": "Снижение риска",
+          "description": "Страховые, погодные, операционные, регуляторные риски",
+          "sort_order": 4
+        },
+        {
+          "code": "compliance",
+          "label": "Compliance / отчетность",
+          "description": "Снижение ошибок, штрафов, ручной отчетности",
+          "sort_order": 5
+        },
+        {
+          "code": "transparency",
+          "label": "Прозрачность управления",
+          "description": "Контроль, видимость данных, управленческая отчетность",
+          "sort_order": 6
+        },
+        {
+          "code": "asset_utilization",
+          "label": "Повышение загрузки активов",
+          "description": "Техника, склад, персонал, транспорт",
+          "sort_order": 7
+        },
+        {
+          "code": "quality_improvement",
+          "label": "Повышение качества",
+          "description": "Качество продукции/процессов",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "code": "Dict_KPI_Units",
+      "name": "KPI Units",
+      "description": "Imported from Dict_KPI_Units",
+      "items": [
+        {
+          "code": "rub_per_ha",
+          "label": "₽/га",
+          "description": "Экономия или дополнительная маржа на гектар",
+          "sort_order": 0
+        },
+        {
+          "code": "rub_per_head",
+          "label": "₽/голову",
+          "description": "Экономия или дополнительная маржа на голову",
+          "sort_order": 1
+        },
+        {
+          "code": "rub_per_ton",
+          "label": "₽/тонну",
+          "description": "Экономия или маржа на тонну продукции",
+          "sort_order": 2
+        },
+        {
+          "code": "rub_per_machine",
+          "label": "₽/ед. техники",
+          "description": "Экономия на единицу техники",
+          "sort_order": 3
+        },
+        {
+          "code": "hours_per_month",
+          "label": "часы/месяц",
+          "description": "Экономия рабочего времени",
+          "sort_order": 4
+        },
+        {
+          "code": "fuel_l_per_ha",
+          "label": "л топлива/га",
+          "description": "Снижение расхода топлива",
+          "sort_order": 5
+        },
+        {
+          "code": "yield_t_per_ha",
+          "label": "т/га",
+          "description": "Рост урожайности",
+          "sort_order": 6
+        },
+        {
+          "code": "milk_kg_per_head_day",
+          "label": "кг молока/голову/день",
+          "description": "Рост продуктивности в молочном животноводстве",
+          "sort_order": 7
+        },
+        {
+          "code": "mortality_percent",
+          "label": "% падежа",
+          "description": "Снижение падежа",
+          "sort_order": 8
+        },
+        {
+          "code": "loss_percent",
+          "label": "% потерь",
+          "description": "Снижение потерь",
+          "sort_order": 9
+        },
+        {
+          "code": "reporting_time_days",
+          "label": "дней на отчетность",
+          "description": "Сокращение срока подготовки отчетности",
+          "sort_order": 10
+        },
+        {
+          "code": "error_count",
+          "label": "кол-во ошибок",
+          "description": "Снижение ошибок документов/отчетности",
+          "sort_order": 11
+        },
+        {
+          "code": "downtime_hours",
+          "label": "часы простоя",
+          "description": "Снижение простоя техники/оборудования",
+          "sort_order": 12
+        },
+        {
+          "code": "inventory_turnover",
+          "label": "оборачиваемость запасов",
+          "description": "Улучшение складского управления",
+          "sort_order": 13
+        },
+        {
+          "code": "service_level",
+          "label": "уровень сервиса",
+          "description": "SLA / качество исполнения",
+          "sort_order": 14
+        }
+      ]
+    },
+    {
+      "code": "Dict_Evidence_Levels",
+      "name": "Evidence Levels",
+      "description": "Imported from Dict_Evidence_Levels",
+      "items": [
+        {
+          "code": "0",
+          "label": "0 — заявление",
+          "description": "Есть только описание поставщика",
+          "sort_order": 0
+        },
+        {
+          "code": "1",
+          "label": "1 — сайт/материалы",
+          "description": "Есть сайт, презентация, базовая карточка",
+          "sort_order": 1
+        },
+        {
+          "code": "2",
+          "label": "2 — пилот",
+          "description": "Есть пилот или демонстрационное внедрение",
+          "sort_order": 2
+        },
+        {
+          "code": "3",
+          "label": "3 — коммерческие внедрения",
+          "description": "Есть реальные коммерческие внедрения",
+          "sort_order": 3
+        },
+        {
+          "code": "4",
+          "label": "4 — подтвержденные кейсы",
+          "description": "Есть публичные кейсы, клиенты, KPI",
+          "sort_order": 4
+        },
+        {
+          "code": "5",
+          "label": "5 — верифицировано Агропортом",
+          "description": "Проверены документы, клиенты, эффект, интеграции",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "code": "Dict_Agri_Subsectors",
+      "name": "Agri Subsectors",
+      "description": "Imported from Dict_Agri_Subsectors",
+      "items": [
+        {
+          "code": "crop_grain",
+          "label": "Растениеводство / зерновые",
+          "description": "Пшеница, ячмень, кукуруза, рожь, овес",
+          "sort_order": 0
+        },
+        {
+          "code": "crop_oilseeds",
+          "label": "Растениеводство / масличные",
+          "description": "Подсолнечник, рапс, соя, лен",
+          "sort_order": 1
+        },
+        {
+          "code": "crop_pulses",
+          "label": "Растениеводство / зернобобовые",
+          "description": "Горох, нут, чечевица, фасоль",
+          "sort_order": 2
+        },
+        {
+          "code": "crop_sugarbeet",
+          "label": "Свекловодство",
+          "description": "Сахарная свекла",
+          "sort_order": 3
+        },
+        {
+          "code": "crop_potato",
+          "label": "Картофелеводство",
+          "description": "Картофель",
+          "sort_order": 4
+        },
+        {
+          "code": "crop_vegetables_open",
+          "label": "Овощи открытого грунта",
+          "description": "Овощные культуры вне теплиц",
+          "sort_order": 5
+        },
+        {
+          "code": "greenhouse",
+          "label": "Тепличное производство",
+          "description": "Овощи, зелень, ягоды в защищенном грунте",
+          "sort_order": 6
+        },
+        {
+          "code": "orchard",
+          "label": "Садоводство",
+          "description": "Фрукты, ягоды, сады",
+          "sort_order": 7
+        },
+        {
+          "code": "viticulture",
+          "label": "Виноградарство",
+          "description": "Виноградники",
+          "sort_order": 8
+        },
+        {
+          "code": "dairy",
+          "label": "Молочное животноводство",
+          "description": "КРС молочного направления",
+          "sort_order": 9
+        },
+        {
+          "code": "beef",
+          "label": "Мясное животноводство",
+          "description": "КРС мясного направления",
+          "sort_order": 10
+        },
+        {
+          "code": "pig",
+          "label": "Свиноводство",
+          "description": "Свиноводческие комплексы",
+          "sort_order": 11
+        },
+        {
+          "code": "poultry",
+          "label": "Птицеводство",
+          "description": "Бройлеры, яйцо, инкубация",
+          "sort_order": 12
+        },
+        {
+          "code": "sheep_goat",
+          "label": "Овцеводство / козоводство",
+          "description": "МРС",
+          "sort_order": 13
+        },
+        {
+          "code": "aquaculture",
+          "label": "Аквакультура",
+          "description": "Рыба, мальки, пруды, УЗВ",
+          "sort_order": 14
+        },
+        {
+          "code": "beekeeping",
+          "label": "Пчеловодство и опыление",
+          "description": "Пасеки, услуги опыления",
+          "sort_order": 15
+        },
+        {
+          "code": "elevator_storage",
+          "label": "Элеваторы и хранение",
+          "description": "Зернохранилища, склады, холодильники",
+          "sort_order": 16
+        },
+        {
+          "code": "processing",
+          "label": "Переработка",
+          "description": "Молоко, мясо, зерно, овощи, масложир",
+          "sort_order": 17
+        },
+        {
+          "code": "logistics",
+          "label": "Логистика АПК",
+          "description": "Перевозки, TMS, маршруты, холодовая цепь",
+          "sort_order": 18
+        },
+        {
+          "code": "machinery_service",
+          "label": "Техника и сервис",
+          "description": "Парк техники, ремонт, ТОиР, аренда",
+          "sort_order": 19
+        },
+        {
+          "code": "public_support",
+          "label": "Господдержка и финансирование",
+          "description": "Гранты, субсидии, кредиты, лизинг",
+          "sort_order": 20
+        },
+        {
+          "code": "traceability",
+          "label": "Прослеживаемость и ФГИС",
+          "description": "Зерно, Сатурн, Меркурий, Хорриот, ЕФИС ЗСН",
+          "sort_order": 21
+        }
+      ]
+    },
+    {
+      "code": "Dict_Agri_Processes",
+      "name": "Agri Processes",
+      "description": "Imported from Dict_Agri_Processes",
+      "items": [
+        {
+          "code": "planning",
+          "label": "Планирование сезона",
+          "description": "Культуры, площади, бюджет, ресурсы",
+          "sort_order": 0
+        },
+        {
+          "code": "procurement",
+          "label": "Закупки",
+          "description": "Семена, СЗР, удобрения, корма, запчасти",
+          "sort_order": 1
+        },
+        {
+          "code": "field_mapping",
+          "label": "Контуры и карты полей",
+          "description": "Полевая география, границы, зоны",
+          "sort_order": 2
+        },
+        {
+          "code": "soil_analysis",
+          "label": "Анализ почвы",
+          "description": "Отбор проб, лаборатории, агрохимия",
+          "sort_order": 3
+        },
+        {
+          "code": "seeding",
+          "label": "Посевная",
+          "description": "Нормы высева, сроки, техника, качество",
+          "sort_order": 4
+        },
+        {
+          "code": "fertilization",
+          "label": "Внесение удобрений",
+          "description": "Нормы, дифференцированное внесение",
+          "sort_order": 5
+        },
+        {
+          "code": "crop_protection",
+          "label": "Обработка СЗР",
+          "description": "Пестициды, вредители, болезни, журналы",
+          "sort_order": 6
+        },
+        {
+          "code": "irrigation",
+          "label": "Орошение",
+          "description": "Полив, влажность, насосы, вода",
+          "sort_order": 7
+        },
+        {
+          "code": "scouting",
+          "label": "Агроскаутинг",
+          "description": "Осмотр полей, фото, задания, проблемные зоны",
+          "sort_order": 8
+        },
+        {
+          "code": "harvesting",
+          "label": "Уборка",
+          "description": "Комбайны, маршруты, потери, урожайность",
+          "sort_order": 9
+        },
+        {
+          "code": "storage",
+          "label": "Хранение",
+          "description": "Склад, элеватор, микроклимат, остатки",
+          "sort_order": 10
+        },
+        {
+          "code": "transportation",
+          "label": "Транспортировка",
+          "description": "Маршруты, грузы, автопарк, перевозчики",
+          "sort_order": 11
+        },
+        {
+          "code": "sales",
+          "label": "Сбыт",
+          "description": "Продажа продукции, контракты, закупщики",
+          "sort_order": 12
+        },
+        {
+          "code": "livestock_inventory",
+          "label": "Учет животных",
+          "description": "Идентификация, поголовье, движение",
+          "sort_order": 13
+        },
+        {
+          "code": "feeding",
+          "label": "Кормление",
+          "description": "Рационы, корма, кормораздача",
+          "sort_order": 14
+        },
+        {
+          "code": "veterinary",
+          "label": "Ветеринария",
+          "description": "Осмотры, лечение, профилактика, ВетИС",
+          "sort_order": 15
+        },
+        {
+          "code": "milking",
+          "label": "Доение",
+          "description": "Доильное оборудование, продуктивность, качество молока",
+          "sort_order": 16
+        },
+        {
+          "code": "breeding",
+          "label": "Воспроизводство",
+          "description": "Осеменение, отелы, генетика",
+          "sort_order": 17
+        },
+        {
+          "code": "greenhouse_climate",
+          "label": "Климат теплицы",
+          "description": "Температура, влажность, СО2, освещение",
+          "sort_order": 18
+        },
+        {
+          "code": "quality_lab",
+          "label": "Лабораторный контроль",
+          "description": "Качество, анализы, LIMS",
+          "sort_order": 19
+        },
+        {
+          "code": "maintenance",
+          "label": "ТОиР",
+          "description": "Ремонт, обслуживание, запчасти",
+          "sort_order": 20
+        },
+        {
+          "code": "accounting_finance",
+          "label": "Финансы и учет",
+          "description": "Бюджет, себестоимость, управленческий учет",
+          "sort_order": 21
+        },
+        {
+          "code": "reporting",
+          "label": "Отчетность",
+          "description": "ФГИС, субсидии, регламенты, ЭДО",
+          "sort_order": 22
+        },
+        {
+          "code": "hr_seasonal",
+          "label": "Персонал",
+          "description": "Сезонные рабочие, вакансии, задачи",
+          "sort_order": 23
+        }
+      ]
+    },
+    {
+      "code": "Dict_Farmer_Problems",
+      "name": "Farmer Problems",
+      "description": "Imported from Dict_Farmer_Problems",
+      "items": [
+        {
+          "code": "manual_accounting",
+          "label": "Ручной учет и Excel",
+          "description": "Данные ведутся вручную, нет единого источника правды",
+          "sort_order": 0
+        },
+        {
+          "code": "poor_cost_visibility",
+          "label": "Не видна себестоимость",
+          "description": "Непонятна экономика культур, стад, объектов",
+          "sort_order": 1
+        },
+        {
+          "code": "machinery_downtime",
+          "label": "Простой техники",
+          "description": "Техника простаивает, нет контроля работ/ремонта",
+          "sort_order": 2
+        },
+        {
+          "code": "fuel_overconsumption",
+          "label": "Перерасход топлива",
+          "description": "Нет контроля топлива, маршрутов, норм",
+          "sort_order": 3
+        },
+        {
+          "code": "field_blindness",
+          "label": "Не видны проблемные зоны поля",
+          "description": "Нет карт, скаутинга, NDVI, статусов",
+          "sort_order": 4
+        },
+        {
+          "code": "low_yield",
+          "label": "Низкая урожайность",
+          "description": "Нет управляемой диагностики причин",
+          "sort_order": 5
+        },
+        {
+          "code": "input_overuse",
+          "label": "Перерасход СЗР/удобрений/кормов",
+          "description": "Нет нормирования, контроля и аналитики",
+          "sort_order": 6
+        },
+        {
+          "code": "pest_disease_risk",
+          "label": "Вредители и болезни",
+          "description": "Позднее обнаружение проблем",
+          "sort_order": 7
+        },
+        {
+          "code": "storage_losses",
+          "label": "Потери при хранении",
+          "description": "Порча, влажность, температура, учет остатков",
+          "sort_order": 8
+        },
+        {
+          "code": "logistics_delays",
+          "label": "Срывы логистики",
+          "description": "Нет маршрутизации, контроля машин, сроков",
+          "sort_order": 9
+        },
+        {
+          "code": "fgis_errors",
+          "label": "Ошибки во ФГИС/отчетности",
+          "description": "Ручной ввод, штрафы, дублирование данных",
+          "sort_order": 10
+        },
+        {
+          "code": "subsidy_complexity",
+          "label": "Сложность субсидий и грантов",
+          "description": "Непонятно, какие меры подходят, какие документы нужны",
+          "sort_order": 11
+        },
+        {
+          "code": "lack_financing",
+          "label": "Нехватка оборотки/финансирования",
+          "description": "Нет доступа к льготным кредитам/лизингу",
+          "sort_order": 12
+        },
+        {
+          "code": "low_digital_maturity",
+          "label": "Низкая цифровая зрелость",
+          "description": "Сложные решения не внедряются без сопровождения",
+          "sort_order": 13
+        },
+        {
+          "code": "data_fragmentation",
+          "label": "Разрозненные данные",
+          "description": "1С, Excel, ФГИС, техника и датчики не связаны",
+          "sort_order": 14
+        },
+        {
+          "code": "no_trusted_suppliers",
+          "label": "Нет доверенных поставщиков/исполнителей",
+          "description": "Сложно проверить качество и надежность",
+          "sort_order": 15
+        },
+        {
+          "code": "livestock_health",
+          "label": "Проблемы здоровья стада",
+          "description": "Падеж, болезни, поздняя диагностика",
+          "sort_order": 16
+        },
+        {
+          "code": "low_productivity_livestock",
+          "label": "Низкая продуктивность животных",
+          "description": "Надои/прирост ниже потенциала",
+          "sort_order": 17
+        },
+        {
+          "code": "greenhouse_energy",
+          "label": "Высокие энергозатраты теплицы",
+          "description": "Климат и ресурсы управляются неэффективно",
+          "sort_order": 18
+        },
+        {
+          "code": "quality_traceability",
+          "label": "Сложность качества и прослеживаемости",
+          "description": "Нет цифровых доказательств происхождения/качества",
+          "sort_order": 19
+        },
+        {
+          "code": "inventory_errors",
+          "label": "Ошибки запасов и склада",
+          "description": "Неверные остатки, дефицит, излишки",
+          "sort_order": 20
+        },
+        {
+          "code": "staff_shortage",
+          "label": "Нехватка кадров",
+          "description": "Нет людей, слабая дисциплина операций",
+          "sort_order": 21
+        },
+        {
+          "code": "implementation_fear",
+          "label": "Страх сложного внедрения",
+          "description": "Нет понимания сроков, цены, эффекта",
+          "sort_order": 22
+        },
+        {
+          "code": "roi_unclear",
+          "label": "Непонятный ROI решения",
+          "description": "Поставщик не показывает экономику",
+          "sort_order": 23
+        }
+      ]
+    },
+    {
+      "code": "Dict_User_Roles",
+      "name": "User Roles",
+      "description": "Imported from Dict_User_Roles",
+      "items": [
+        {
+          "code": "owner",
+          "label": "Собственник",
+          "description": "Стратегические решения, экономика, инвестиции",
+          "sort_order": 0
+        },
+        {
+          "code": "director",
+          "label": "Директор / гендиректор",
+          "description": "Операционное управление",
+          "sort_order": 1
+        },
+        {
+          "code": "agronomist",
+          "label": "Агроном",
+          "description": "Поля, культуры, СЗР, удобрения",
+          "sort_order": 2
+        },
+        {
+          "code": "engineer",
+          "label": "Главный инженер",
+          "description": "Техника, ремонт, топливо, GPS",
+          "sort_order": 3
+        },
+        {
+          "code": "vet",
+          "label": "Ветеринар",
+          "description": "Здоровье животных, ВетИС",
+          "sort_order": 4
+        },
+        {
+          "code": "zootechnician",
+          "label": "Зоотехник",
+          "description": "Кормление, продуктивность, стадо",
+          "sort_order": 5
+        },
+        {
+          "code": "accountant",
+          "label": "Бухгалтер",
+          "description": "1С, документы, отчетность",
+          "sort_order": 6
+        },
+        {
+          "code": "fin_dir",
+          "label": "Финансовый директор",
+          "description": "Бюджет, казначейство, управленческий учет",
+          "sort_order": 7
+        },
+        {
+          "code": "logistician",
+          "label": "Логист",
+          "description": "Маршруты, транспорт, отгрузки",
+          "sort_order": 8
+        },
+        {
+          "code": "warehouse_manager",
+          "label": "Заведующий складом",
+          "description": "Остатки, приемка, отгрузка",
+          "sort_order": 9
+        },
+        {
+          "code": "it_manager",
+          "label": "ИТ-специалист",
+          "description": "Интеграции, инфраструктура, безопасность",
+          "sort_order": 10
+        },
+        {
+          "code": "sales_manager",
+          "label": "Коммерческий менеджер",
+          "description": "Сбыт, закупщики, контракты",
+          "sort_order": 11
+        }
+      ]
+    },
+    {
+      "code": "Dict_Integrations",
+      "name": "Integrations",
+      "description": "Imported from Dict_Integrations",
+      "items": [
+        {
+          "code": "1c",
+          "label": "1С",
+          "description": "Интеграция с 1С",
+          "sort_order": 0
+        },
+        {
+          "code": "erp",
+          "label": "ERP",
+          "description": "ERP-система клиента",
+          "sort_order": 1
+        },
+        {
+          "code": "edo",
+          "label": "ЭДО",
+          "description": "Диадок, СБИС, Контур и др.",
+          "sort_order": 2
+        },
+        {
+          "code": "fgis_zerno",
+          "label": "ФГИС Зерно",
+          "description": "Прослеживаемость зерна",
+          "sort_order": 3
+        },
+        {
+          "code": "fgis_saturn",
+          "label": "ФГИС Сатурн",
+          "description": "Пестициды и агрохимикаты",
+          "sort_order": 4
+        },
+        {
+          "code": "vetis_mercury",
+          "label": "ВетИС / Меркурий",
+          "description": "Ветеринарная сертификация",
+          "sort_order": 5
+        },
+        {
+          "code": "horriot",
+          "label": "Хорриот",
+          "description": "Учет животных",
+          "sort_order": 6
+        },
+        {
+          "code": "efis_zsn",
+          "label": "ЕФИС ЗСН",
+          "description": "Земли сельхозназначения",
+          "sort_order": 7
+        },
+        {
+          "code": "gis",
+          "label": "GIS",
+          "description": "Карты, контуры полей, геоданные",
+          "sort_order": 8
+        },
+        {
+          "code": "telematics",
+          "label": "Телематика",
+          "description": "GPS/ГЛОНАСС, техника, топливо",
+          "sort_order": 9
+        },
+        {
+          "code": "sensors_iot",
+          "label": "IoT-датчики",
+          "description": "Датчики, контроллеры, устройства",
+          "sort_order": 10
+        },
+        {
+          "code": "scada",
+          "label": "SCADA",
+          "description": "АСУ ТП, оборудование, контроллеры",
+          "sort_order": 11
+        },
+        {
+          "code": "wms",
+          "label": "WMS",
+          "description": "Складская система",
+          "sort_order": 12
+        },
+        {
+          "code": "tms",
+          "label": "TMS",
+          "description": "Транспортная система",
+          "sort_order": 13
+        },
+        {
+          "code": "lims",
+          "label": "LIMS",
+          "description": "Лабораторная система",
+          "sort_order": 14
+        },
+        {
+          "code": "bi",
+          "label": "BI",
+          "description": "Дашборды и аналитика",
+          "sort_order": 15
+        },
+        {
+          "code": "api",
+          "label": "API",
+          "description": "Открытый или партнерский API",
+          "sort_order": 16
+        },
+        {
+          "code": "csv_excel",
+          "label": "Excel/CSV",
+          "description": "Импорт/экспорт файлов",
+          "sort_order": 17
+        },
+        {
+          "code": "mobile_app",
+          "label": "Мобильное приложение",
+          "description": "Полевой ввод данных",
+          "sort_order": 18
+        },
+        {
+          "code": "bank_api",
+          "label": "Банк/API финансирования",
+          "description": "Кредит, лизинг, платежи",
+          "sort_order": 19
+        }
+      ]
+    },
+    {
+      "code": "Dict_Data_Sources",
+      "name": "Data Sources",
+      "description": "Imported from Dict_Data_Sources",
+      "items": [
+        {
+          "code": "manual_input",
+          "label": "Ручной ввод",
+          "description": "Данные вводит пользователь",
+          "sort_order": 0
+        },
+        {
+          "code": "excel_upload",
+          "label": "Excel/CSV загрузка",
+          "description": "Импорт из таблиц",
+          "sort_order": 1
+        },
+        {
+          "code": "1c_data",
+          "label": "1С",
+          "description": "Данные из 1С",
+          "sort_order": 2
+        },
+        {
+          "code": "machine_telematics",
+          "label": "Телематика техники",
+          "description": "GPS, топливо, моточасы",
+          "sort_order": 3
+        },
+        {
+          "code": "satellite",
+          "label": "Спутниковые снимки",
+          "description": "NDVI, вегетация, поля",
+          "sort_order": 4
+        },
+        {
+          "code": "drone",
+          "label": "БПЛА",
+          "description": "Ортофото, съемка, инспекция",
+          "sort_order": 5
+        },
+        {
+          "code": "iot_sensors",
+          "label": "IoT-датчики",
+          "description": "Температура, влажность, давление, вес",
+          "sort_order": 6
+        },
+        {
+          "code": "weather",
+          "label": "Погода",
+          "description": "Прогноз, фактическая погода, риски",
+          "sort_order": 7
+        },
+        {
+          "code": "lab_results",
+          "label": "Лабораторные результаты",
+          "description": "Почва, молоко, зерно, корма",
+          "sort_order": 8
+        },
+        {
+          "code": "fgis_data",
+          "label": "ФГИС",
+          "description": "Государственные данные и статусы",
+          "sort_order": 9
+        },
+        {
+          "code": "market_prices",
+          "label": "Рыночные цены",
+          "description": "Цены зерна, входов, услуг",
+          "sort_order": 10
+        },
+        {
+          "code": "financial_data",
+          "label": "Финансовые данные",
+          "description": "Платежи, кредиты, бюджет",
+          "sort_order": 11
+        },
+        {
+          "code": "photos_video",
+          "label": "Фото/видео",
+          "description": "Компьютерное зрение, осмотры",
+          "sort_order": 12
+        }
+      ]
+    },
+    {
+      "code": "Dict_Regions",
+      "name": "Regions",
+      "description": "Imported from Dict_Regions",
+      "items": [
+        {
+          "code": "rf_all",
+          "label": "Вся Россия",
+          "description": null,
+          "sort_order": 0
+        },
+        {
+          "code": "cfo",
+          "label": "ЦФО",
+          "description": null,
+          "sort_order": 1
+        },
+        {
+          "code": "szfo",
+          "label": "СЗФО",
+          "description": null,
+          "sort_order": 2
+        },
+        {
+          "code": "yfo",
+          "label": "ЮФО",
+          "description": null,
+          "sort_order": 3
+        },
+        {
+          "code": "skfo",
+          "label": "СКФО",
+          "description": null,
+          "sort_order": 4
+        },
+        {
+          "code": "pfo",
+          "label": "ПФО",
+          "description": null,
+          "sort_order": 5
+        },
+        {
+          "code": "ufo",
+          "label": "УФО",
+          "description": null,
+          "sort_order": 6
+        },
+        {
+          "code": "sfo",
+          "label": "СФО",
+          "description": null,
+          "sort_order": 7
+        },
+        {
+          "code": "dfo",
+          "label": "ДФО",
+          "description": null,
+          "sort_order": 8
+        },
+        {
+          "code": "moscow_oblast",
+          "label": "Московская область",
+          "description": null,
+          "sort_order": 9
+        },
+        {
+          "code": "krasnodar",
+          "label": "Краснодарский край",
+          "description": null,
+          "sort_order": 10
+        },
+        {
+          "code": "stavropol",
+          "label": "Ставропольский край",
+          "description": null,
+          "sort_order": 11
+        },
+        {
+          "code": "rostov",
+          "label": "Ростовская область",
+          "description": null,
+          "sort_order": 12
+        },
+        {
+          "code": "voronezh",
+          "label": "Воронежская область",
+          "description": null,
+          "sort_order": 13
+        },
+        {
+          "code": "belgorod",
+          "label": "Белгородская область",
+          "description": null,
+          "sort_order": 14
+        },
+        {
+          "code": "kursk",
+          "label": "Курская область",
+          "description": null,
+          "sort_order": 15
+        },
+        {
+          "code": "tatarstan",
+          "label": "Республика Татарстан",
+          "description": null,
+          "sort_order": 16
+        },
+        {
+          "code": "bashkortostan",
+          "label": "Республика Башкортостан",
+          "description": null,
+          "sort_order": 17
+        },
+        {
+          "code": "samara",
+          "label": "Самарская область",
+          "description": null,
+          "sort_order": 18
+        },
+        {
+          "code": "saratov",
+          "label": "Саратовская область",
+          "description": null,
+          "sort_order": 19
+        },
+        {
+          "code": "volgograd",
+          "label": "Волгоградская область",
+          "description": null,
+          "sort_order": 20
+        },
+        {
+          "code": "altai",
+          "label": "Алтайский край",
+          "description": null,
+          "sort_order": 21
+        },
+        {
+          "code": "novosibirsk",
+          "label": "Новосибирская область",
+          "description": null,
+          "sort_order": 22
+        },
+        {
+          "code": "omsk",
+          "label": "Омская область",
+          "description": null,
+          "sort_order": 23
+        },
+        {
+          "code": "tyumen",
+          "label": "Тюменская область",
+          "description": null,
+          "sort_order": 24
+        }
+      ]
+    },
+    {
+      "code": "Dict_Urgency",
+      "name": "Urgency",
+      "description": "Imported from Dict_Urgency",
+      "items": [
+        {
+          "code": "low",
+          "label": "Низкая",
+          "description": "Можно вернуться позже",
+          "sort_order": 0
+        },
+        {
+          "code": "medium",
+          "label": "Средняя",
+          "description": "Нужно решить в течение сезона",
+          "sort_order": 1
+        },
+        {
+          "code": "high",
+          "label": "Высокая",
+          "description": "Проблема влияет на деньги сейчас",
+          "sort_order": 2
+        },
+        {
+          "code": "critical",
+          "label": "Критическая",
+          "description": "Остановка процесса / риск штрафа / срыв сроков",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "code": "Dict_Yes_No",
+      "name": "Yes No",
+      "description": "Imported from Dict_Yes_No",
+      "items": [
+        {
+          "code": "yes",
+          "label": "Да",
+          "description": null,
+          "sort_order": 0
+        },
+        {
+          "code": "no",
+          "label": "Нет",
+          "description": null,
+          "sort_order": 1
+        },
+        {
+          "code": "unknown",
+          "label": "Не знаю",
+          "description": null,
+          "sort_order": 2
+        }
+      ]
+    }
+  ],
+  "taxonomy_nodes": [
+    {
+      "external_id": "L1_0001",
+      "parent_external_id": null,
+      "level": 1,
+      "name": "Software",
+      "slug": "l1-0001-software",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 0
+    },
+    {
+      "external_id": "L2_0001",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Корпоративное управление",
+      "slug": "l2-0001-корпоративное-управление",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 1
+    },
+    {
+      "external_id": "L3_0001",
+      "parent_external_id": "L2_0001",
+      "level": 3,
+      "name": "ERP и учет АПК",
+      "slug": "l3-0001-erp-и-учет-апк",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 2
+    },
+    {
+      "external_id": "L4_0001",
+      "parent_external_id": "L3_0001",
+      "level": 4,
+      "name": "ERP для агрохолдингов",
+      "slug": "l4-0001-erp-для-агрохолдингов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 3
+    },
+    {
+      "external_id": "L4_0002",
+      "parent_external_id": "L3_0001",
+      "level": 4,
+      "name": "1С-решения для АПК",
+      "slug": "l4-0002-1с-решения-для-апк",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 4
+    },
+    {
+      "external_id": "L4_0003",
+      "parent_external_id": "L3_0001",
+      "level": 4,
+      "name": "Финансовый учет и казначейство",
+      "slug": "l4-0003-финансовый-учет-и-казначейство",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 5
+    },
+    {
+      "external_id": "L4_0004",
+      "parent_external_id": "L3_0001",
+      "level": 4,
+      "name": "Управленческий учет хозяйства",
+      "slug": "l4-0004-управленческий-учет-хозяйства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 6
+    },
+    {
+      "external_id": "L4_0005",
+      "parent_external_id": "L3_0001",
+      "level": 4,
+      "name": "Консолидация отчетности",
+      "slug": "l4-0005-консолидация-отчетности",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 7
+    },
+    {
+      "external_id": "L4_0006",
+      "parent_external_id": "L3_0001",
+      "level": 4,
+      "name": "Бюджетирование и план-факт",
+      "slug": "l4-0006-бюджетирование-и-план-факт",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 8
+    },
+    {
+      "external_id": "L4_0007",
+      "parent_external_id": "L3_0001",
+      "level": 4,
+      "name": "Учет договоров и контрагентов",
+      "slug": "l4-0007-учет-договоров-и-контрагентов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 9
+    },
+    {
+      "external_id": "L3_0002",
+      "parent_external_id": "L2_0001",
+      "level": 3,
+      "name": "FMIS / Farm Management",
+      "slug": "l3-0002-fmis-farm-management",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 10
+    },
+    {
+      "external_id": "L4_0008",
+      "parent_external_id": "L3_0002",
+      "level": 4,
+      "name": "Управление полями и севооборотом",
+      "slug": "l4-0008-управление-полями-и-севооборотом",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 11
+    },
+    {
+      "external_id": "L4_0009",
+      "parent_external_id": "L3_0002",
+      "level": 4,
+      "name": "Технологические карты культур",
+      "slug": "l4-0009-технологические-карты-культур",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 12
+    },
+    {
+      "external_id": "L4_0010",
+      "parent_external_id": "L3_0002",
+      "level": 4,
+      "name": "Планирование агроопераций",
+      "slug": "l4-0010-планирование-агроопераций",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 13
+    },
+    {
+      "external_id": "L4_0011",
+      "parent_external_id": "L3_0002",
+      "level": 4,
+      "name": "Журнал полевых работ",
+      "slug": "l4-0011-журнал-полевых-работ",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 14
+    },
+    {
+      "external_id": "L4_0012",
+      "parent_external_id": "L3_0002",
+      "level": 4,
+      "name": "Учет урожайности по полям",
+      "slug": "l4-0012-учет-урожайности-по-полям",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 15
+    },
+    {
+      "external_id": "L4_0013",
+      "parent_external_id": "L3_0002",
+      "level": 4,
+      "name": "Карта продуктивности поля",
+      "slug": "l4-0013-карта-продуктивности-поля",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 16
+    },
+    {
+      "external_id": "L4_0014",
+      "parent_external_id": "L3_0002",
+      "level": 4,
+      "name": "Учет затрат по полям",
+      "slug": "l4-0014-учет-затрат-по-полям",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 17
+    },
+    {
+      "external_id": "L4_0015",
+      "parent_external_id": "L3_0002",
+      "level": 4,
+      "name": "Полевые задания агроному",
+      "slug": "l4-0015-полевые-задания-агроному",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 18
+    },
+    {
+      "external_id": "L2_0002",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Геоданные и поля",
+      "slug": "l2-0002-геоданные-и-поля",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 19
+    },
+    {
+      "external_id": "L3_0003",
+      "parent_external_id": "L2_0002",
+      "level": 3,
+      "name": "GIS / Remote sensing",
+      "slug": "l3-0003-gis-remote-sensing",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 20
+    },
+    {
+      "external_id": "L4_0016",
+      "parent_external_id": "L3_0003",
+      "level": 4,
+      "name": "Контуры полей и земельный банк",
+      "slug": "l4-0016-контуры-полей-и-земельный-банк",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 21
+    },
+    {
+      "external_id": "L4_0017",
+      "parent_external_id": "L3_0003",
+      "level": 4,
+      "name": "Спутниковый мониторинг NDVI",
+      "slug": "l4-0017-спутниковый-мониторинг-ndvi",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 22
+    },
+    {
+      "external_id": "L4_0018",
+      "parent_external_id": "L3_0003",
+      "level": 4,
+      "name": "Мониторинг всходов и вегетации",
+      "slug": "l4-0018-мониторинг-всходов-и-вегетации",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 23
+    },
+    {
+      "external_id": "L4_0019",
+      "parent_external_id": "L3_0003",
+      "level": 4,
+      "name": "Выявление проблемных зон",
+      "slug": "l4-0019-выявление-проблемных-зон",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 24
+    },
+    {
+      "external_id": "L4_0020",
+      "parent_external_id": "L3_0003",
+      "level": 4,
+      "name": "Карты дифференцированного внесения",
+      "slug": "l4-0020-карты-дифференцированного-внесения",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 25
+    },
+    {
+      "external_id": "L4_0021",
+      "parent_external_id": "L3_0003",
+      "level": 4,
+      "name": "Агроскаутинг и фотофиксация",
+      "slug": "l4-0021-агроскаутинг-и-фотофиксация",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 26
+    },
+    {
+      "external_id": "L4_0022",
+      "parent_external_id": "L3_0003",
+      "level": 4,
+      "name": "Прогноз урожайности",
+      "slug": "l4-0022-прогноз-урожайности",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 27
+    },
+    {
+      "external_id": "L4_0023",
+      "parent_external_id": "L3_0003",
+      "level": 4,
+      "name": "Мониторинг влагообеспеченности",
+      "slug": "l4-0023-мониторинг-влагообеспеченности",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 28
+    },
+    {
+      "external_id": "L2_0003",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Точное земледелие",
+      "slug": "l2-0003-точное-земледелие",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 29
+    },
+    {
+      "external_id": "L3_0004",
+      "parent_external_id": "L2_0003",
+      "level": 3,
+      "name": "Precision agriculture",
+      "slug": "l3-0004-precision-agriculture",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 30
+    },
+    {
+      "external_id": "L4_0024",
+      "parent_external_id": "L3_0004",
+      "level": 4,
+      "name": "Дифференцированный посев",
+      "slug": "l4-0024-дифференцированный-посев",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 31
+    },
+    {
+      "external_id": "L4_0025",
+      "parent_external_id": "L3_0004",
+      "level": 4,
+      "name": "Дифференцированное внесение удобрений",
+      "slug": "l4-0025-дифференцированное-внесение-удобрений",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 32
+    },
+    {
+      "external_id": "L4_0026",
+      "parent_external_id": "L3_0004",
+      "level": 4,
+      "name": "Дифференцированное внесение СЗР",
+      "slug": "l4-0026-дифференцированное-внесение-сзр",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 33
+    },
+    {
+      "external_id": "L4_0027",
+      "parent_external_id": "L3_0004",
+      "level": 4,
+      "name": "Навигация и автопилот техники",
+      "slug": "l4-0027-навигация-и-автопилот-техники",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 34
+    },
+    {
+      "external_id": "L4_0028",
+      "parent_external_id": "L3_0004",
+      "level": 4,
+      "name": "Карты-задания для техники",
+      "slug": "l4-0028-карты-задания-для-техники",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 35
+    },
+    {
+      "external_id": "L4_0029",
+      "parent_external_id": "L3_0004",
+      "level": 4,
+      "name": "Контроль качества полевых операций",
+      "slug": "l4-0029-контроль-качества-полевых-операций",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 36
+    },
+    {
+      "external_id": "L4_0030",
+      "parent_external_id": "L3_0004",
+      "level": 4,
+      "name": "Аналитика агроопераций",
+      "slug": "l4-0030-аналитика-агроопераций",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 37
+    },
+    {
+      "external_id": "L2_0004",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Техника и ТОиР",
+      "slug": "l2-0004-техника-и-тоир",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 38
+    },
+    {
+      "external_id": "L3_0005",
+      "parent_external_id": "L2_0004",
+      "level": 3,
+      "name": "Fleet / EAM / Telematics",
+      "slug": "l3-0005-fleet-eam-telematics",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 39
+    },
+    {
+      "external_id": "L4_0031",
+      "parent_external_id": "L3_0005",
+      "level": 4,
+      "name": "Мониторинг техники GPS/ГЛОНАСС",
+      "slug": "l4-0031-мониторинг-техники-gps-глонасс",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 40
+    },
+    {
+      "external_id": "L4_0032",
+      "parent_external_id": "L3_0005",
+      "level": 4,
+      "name": "Контроль топлива",
+      "slug": "l4-0032-контроль-топлива",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 41
+    },
+    {
+      "external_id": "L4_0033",
+      "parent_external_id": "L3_0005",
+      "level": 4,
+      "name": "Контроль моточасов",
+      "slug": "l4-0033-контроль-моточасов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 42
+    },
+    {
+      "external_id": "L4_0034",
+      "parent_external_id": "L3_0005",
+      "level": 4,
+      "name": "Планирование ТОиР техники",
+      "slug": "l4-0034-планирование-тоир-техники",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 43
+    },
+    {
+      "external_id": "L4_0035",
+      "parent_external_id": "L3_0005",
+      "level": 4,
+      "name": "Учет ремонтов и запчастей",
+      "slug": "l4-0035-учет-ремонтов-и-запчастей",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 44
+    },
+    {
+      "external_id": "L4_0036",
+      "parent_external_id": "L3_0005",
+      "level": 4,
+      "name": "Диспетчеризация техники",
+      "slug": "l4-0036-диспетчеризация-техники",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 45
+    },
+    {
+      "external_id": "L4_0037",
+      "parent_external_id": "L3_0005",
+      "level": 4,
+      "name": "Контроль простоев",
+      "slug": "l4-0037-контроль-простоев",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 46
+    },
+    {
+      "external_id": "L4_0038",
+      "parent_external_id": "L3_0005",
+      "level": 4,
+      "name": "Анализ эффективности машинно-тракторного парка",
+      "slug": "l4-0038-анализ-эффективности-машинно-тракторного-парка",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 47
+    },
+    {
+      "external_id": "L2_0005",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Логистика и склад",
+      "slug": "l2-0005-логистика-и-склад",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 48
+    },
+    {
+      "external_id": "L3_0006",
+      "parent_external_id": "L2_0005",
+      "level": 3,
+      "name": "WMS / TMS / YMS",
+      "slug": "l3-0006-wms-tms-yms",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 49
+    },
+    {
+      "external_id": "L4_0039",
+      "parent_external_id": "L3_0006",
+      "level": 4,
+      "name": "WMS склада АПК",
+      "slug": "l4-0039-wms-склада-апк",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 50
+    },
+    {
+      "external_id": "L4_0040",
+      "parent_external_id": "L3_0006",
+      "level": 4,
+      "name": "TMS агрологистики",
+      "slug": "l4-0040-tms-агрологистики",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 51
+    },
+    {
+      "external_id": "L4_0041",
+      "parent_external_id": "L3_0006",
+      "level": 4,
+      "name": "YMS двора/терминала",
+      "slug": "l4-0041-yms-двора-терминала",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 52
+    },
+    {
+      "external_id": "L4_0042",
+      "parent_external_id": "L3_0006",
+      "level": 4,
+      "name": "Управление элеваторной очередью",
+      "slug": "l4-0042-управление-элеваторной-очередью",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 53
+    },
+    {
+      "external_id": "L4_0043",
+      "parent_external_id": "L3_0006",
+      "level": 4,
+      "name": "Маршрутизация транспорта",
+      "slug": "l4-0043-маршрутизация-транспорта",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 54
+    },
+    {
+      "external_id": "L4_0044",
+      "parent_external_id": "L3_0006",
+      "level": 4,
+      "name": "Учет складских остатков",
+      "slug": "l4-0044-учет-складских-остатков",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 55
+    },
+    {
+      "external_id": "L4_0045",
+      "parent_external_id": "L3_0006",
+      "level": 4,
+      "name": "Адресное хранение",
+      "slug": "l4-0045-адресное-хранение",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 56
+    },
+    {
+      "external_id": "L4_0046",
+      "parent_external_id": "L3_0006",
+      "level": 4,
+      "name": "Управление холодовой цепью",
+      "slug": "l4-0046-управление-холодовой-цепью",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 57
+    },
+    {
+      "external_id": "L4_0047",
+      "parent_external_id": "L3_0006",
+      "level": 4,
+      "name": "Управление отгрузками",
+      "slug": "l4-0047-управление-отгрузками",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 58
+    },
+    {
+      "external_id": "L2_0006",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Элеваторы и хранение",
+      "slug": "l2-0006-элеваторы-и-хранение",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 59
+    },
+    {
+      "external_id": "L3_0007",
+      "parent_external_id": "L2_0006",
+      "level": 3,
+      "name": "Elevator / Storage systems",
+      "slug": "l3-0007-elevator-storage-systems",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 60
+    },
+    {
+      "external_id": "L4_0048",
+      "parent_external_id": "L3_0007",
+      "level": 4,
+      "name": "Учет партий зерна",
+      "slug": "l4-0048-учет-партий-зерна",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 61
+    },
+    {
+      "external_id": "L4_0049",
+      "parent_external_id": "L3_0007",
+      "level": 4,
+      "name": "Учет качества зерна",
+      "slug": "l4-0049-учет-качества-зерна",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 62
+    },
+    {
+      "external_id": "L4_0050",
+      "parent_external_id": "L3_0007",
+      "level": 4,
+      "name": "Управление сушкой зерна",
+      "slug": "l4-0050-управление-сушкой-зерна",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 63
+    },
+    {
+      "external_id": "L4_0051",
+      "parent_external_id": "L3_0007",
+      "level": 4,
+      "name": "Мониторинг температуры силосов",
+      "slug": "l4-0051-мониторинг-температуры-силосов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 64
+    },
+    {
+      "external_id": "L4_0052",
+      "parent_external_id": "L3_0007",
+      "level": 4,
+      "name": "Весовой контроль",
+      "slug": "l4-0052-весовой-контроль",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 65
+    },
+    {
+      "external_id": "L4_0053",
+      "parent_external_id": "L3_0007",
+      "level": 4,
+      "name": "Лабораторный контур элеватора",
+      "slug": "l4-0053-лабораторный-контур-элеватора",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 66
+    },
+    {
+      "external_id": "L4_0054",
+      "parent_external_id": "L3_0007",
+      "level": 4,
+      "name": "Учет движения партий",
+      "slug": "l4-0054-учет-движения-партий",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 67
+    },
+    {
+      "external_id": "L4_0055",
+      "parent_external_id": "L3_0007",
+      "level": 4,
+      "name": "Прослеживаемость хранения",
+      "slug": "l4-0055-прослеживаемость-хранения",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 68
+    },
+    {
+      "external_id": "L2_0007",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Животноводство",
+      "slug": "l2-0007-животноводство",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 69
+    },
+    {
+      "external_id": "L3_0008",
+      "parent_external_id": "L2_0007",
+      "level": 3,
+      "name": "Herd / Livestock management",
+      "slug": "l3-0008-herd-livestock-management",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 70
+    },
+    {
+      "external_id": "L4_0056",
+      "parent_external_id": "L3_0008",
+      "level": 4,
+      "name": "Учет стада КРС",
+      "slug": "l4-0056-учет-стада-крс",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 71
+    },
+    {
+      "external_id": "L4_0057",
+      "parent_external_id": "L3_0008",
+      "level": 4,
+      "name": "Учет молочной продуктивности",
+      "slug": "l4-0057-учет-молочной-продуктивности",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 72
+    },
+    {
+      "external_id": "L4_0058",
+      "parent_external_id": "L3_0008",
+      "level": 4,
+      "name": "Ветеринарный журнал",
+      "slug": "l4-0058-ветеринарный-журнал",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 73
+    },
+    {
+      "external_id": "L4_0059",
+      "parent_external_id": "L3_0008",
+      "level": 4,
+      "name": "Кормление и рационы",
+      "slug": "l4-0059-кормление-и-рационы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 74
+    },
+    {
+      "external_id": "L4_0060",
+      "parent_external_id": "L3_0008",
+      "level": 4,
+      "name": "Воспроизводство и отелы",
+      "slug": "l4-0060-воспроизводство-и-отелы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 75
+    },
+    {
+      "external_id": "L4_0061",
+      "parent_external_id": "L3_0008",
+      "level": 4,
+      "name": "RFID-идентификация животных",
+      "slug": "l4-0061-rfid-идентификация-животных",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 76
+    },
+    {
+      "external_id": "L4_0062",
+      "parent_external_id": "L3_0008",
+      "level": 4,
+      "name": "Мониторинг активности животных",
+      "slug": "l4-0062-мониторинг-активности-животных",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 77
+    },
+    {
+      "external_id": "L4_0063",
+      "parent_external_id": "L3_0008",
+      "level": 4,
+      "name": "Контроль падежа",
+      "slug": "l4-0063-контроль-падежа",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 78
+    },
+    {
+      "external_id": "L4_0064",
+      "parent_external_id": "L3_0008",
+      "level": 4,
+      "name": "Учет свиноводства",
+      "slug": "l4-0064-учет-свиноводства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 79
+    },
+    {
+      "external_id": "L4_0065",
+      "parent_external_id": "L3_0008",
+      "level": 4,
+      "name": "Учет птицеводства",
+      "slug": "l4-0065-учет-птицеводства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 80
+    },
+    {
+      "external_id": "L2_0008",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Теплицы",
+      "slug": "l2-0008-теплицы",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 81
+    },
+    {
+      "external_id": "L3_0009",
+      "parent_external_id": "L2_0008",
+      "level": 3,
+      "name": "Greenhouse software",
+      "slug": "l3-0009-greenhouse-software",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 82
+    },
+    {
+      "external_id": "L4_0066",
+      "parent_external_id": "L3_0009",
+      "level": 4,
+      "name": "Управление микроклиматом теплицы",
+      "slug": "l4-0066-управление-микроклиматом-теплицы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 83
+    },
+    {
+      "external_id": "L4_0067",
+      "parent_external_id": "L3_0009",
+      "level": 4,
+      "name": "Планирование оборотов теплицы",
+      "slug": "l4-0067-планирование-оборотов-теплицы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 84
+    },
+    {
+      "external_id": "L4_0068",
+      "parent_external_id": "L3_0009",
+      "level": 4,
+      "name": "Учет урожая теплицы",
+      "slug": "l4-0068-учет-урожая-теплицы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 85
+    },
+    {
+      "external_id": "L4_0069",
+      "parent_external_id": "L3_0009",
+      "level": 4,
+      "name": "Энергоаналитика теплицы",
+      "slug": "l4-0069-энергоаналитика-теплицы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 86
+    },
+    {
+      "external_id": "L4_0070",
+      "parent_external_id": "L3_0009",
+      "level": 4,
+      "name": "Полив и фертигация",
+      "slug": "l4-0070-полив-и-фертигация",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 87
+    },
+    {
+      "external_id": "L4_0071",
+      "parent_external_id": "L3_0009",
+      "level": 4,
+      "name": "Мониторинг заболеваний растений",
+      "slug": "l4-0071-мониторинг-заболеваний-растений",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 88
+    },
+    {
+      "external_id": "L4_0072",
+      "parent_external_id": "L3_0009",
+      "level": 4,
+      "name": "Учет работ в теплице",
+      "slug": "l4-0072-учет-работ-в-теплице",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 89
+    },
+    {
+      "external_id": "L2_0009",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Переработка",
+      "slug": "l2-0009-переработка",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 90
+    },
+    {
+      "external_id": "L3_0010",
+      "parent_external_id": "L2_0009",
+      "level": 3,
+      "name": "MES / Production / Quality",
+      "slug": "l3-0010-mes-production-quality",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 91
+    },
+    {
+      "external_id": "L4_0073",
+      "parent_external_id": "L3_0010",
+      "level": 4,
+      "name": "MES пищевой переработки",
+      "slug": "l4-0073-mes-пищевой-переработки",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 92
+    },
+    {
+      "external_id": "L4_0074",
+      "parent_external_id": "L3_0010",
+      "level": 4,
+      "name": "Планирование производства",
+      "slug": "l4-0074-планирование-производства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 93
+    },
+    {
+      "external_id": "L4_0075",
+      "parent_external_id": "L3_0010",
+      "level": 4,
+      "name": "Учет партий сырья",
+      "slug": "l4-0075-учет-партий-сырья",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 94
+    },
+    {
+      "external_id": "L4_0076",
+      "parent_external_id": "L3_0010",
+      "level": 4,
+      "name": "Учет выхода готовой продукции",
+      "slug": "l4-0076-учет-выхода-готовой-продукции",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 95
+    },
+    {
+      "external_id": "L4_0077",
+      "parent_external_id": "L3_0010",
+      "level": 4,
+      "name": "Контроль качества на производстве",
+      "slug": "l4-0077-контроль-качества-на-производстве",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 96
+    },
+    {
+      "external_id": "L4_0078",
+      "parent_external_id": "L3_0010",
+      "level": 4,
+      "name": "Управление рецептурами",
+      "slug": "l4-0078-управление-рецептурами",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 97
+    },
+    {
+      "external_id": "L4_0079",
+      "parent_external_id": "L3_0010",
+      "level": 4,
+      "name": "Трассировка партии в переработке",
+      "slug": "l4-0079-трассировка-партии-в-переработке",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 98
+    },
+    {
+      "external_id": "L4_0080",
+      "parent_external_id": "L3_0010",
+      "level": 4,
+      "name": "Производственная диспетчеризация",
+      "slug": "l4-0080-производственная-диспетчеризация",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 99
+    },
+    {
+      "external_id": "L2_0010",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Лаборатории",
+      "slug": "l2-0010-лаборатории",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 100
+    },
+    {
+      "external_id": "L3_0011",
+      "parent_external_id": "L2_0010",
+      "level": 3,
+      "name": "LIMS",
+      "slug": "l3-0011-lims",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 101
+    },
+    {
+      "external_id": "L4_0081",
+      "parent_external_id": "L3_0011",
+      "level": 4,
+      "name": "LIMS агрохимической лаборатории",
+      "slug": "l4-0081-lims-агрохимической-лаборатории",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 102
+    },
+    {
+      "external_id": "L4_0082",
+      "parent_external_id": "L3_0011",
+      "level": 4,
+      "name": "LIMS молочной лаборатории",
+      "slug": "l4-0082-lims-молочной-лаборатории",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 103
+    },
+    {
+      "external_id": "L4_0083",
+      "parent_external_id": "L3_0011",
+      "level": 4,
+      "name": "LIMS ветеринарной лаборатории",
+      "slug": "l4-0083-lims-ветеринарной-лаборатории",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 104
+    },
+    {
+      "external_id": "L4_0084",
+      "parent_external_id": "L3_0011",
+      "level": 4,
+      "name": "LIMS зерновой лаборатории",
+      "slug": "l4-0084-lims-зерновой-лаборатории",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 105
+    },
+    {
+      "external_id": "L4_0085",
+      "parent_external_id": "L3_0011",
+      "level": 4,
+      "name": "Учет проб и результатов",
+      "slug": "l4-0085-учет-проб-и-результатов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 106
+    },
+    {
+      "external_id": "L4_0086",
+      "parent_external_id": "L3_0011",
+      "level": 4,
+      "name": "Интеграция лаборатории с производством",
+      "slug": "l4-0086-интеграция-лаборатории-с-производством",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 107
+    },
+    {
+      "external_id": "L2_0011",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "ФГИС и отчетность",
+      "slug": "l2-0011-фгис-и-отчетность",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 108
+    },
+    {
+      "external_id": "L3_0012",
+      "parent_external_id": "L2_0011",
+      "level": 3,
+      "name": "Compliance / Traceability",
+      "slug": "l3-0012-compliance-traceability",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 109
+    },
+    {
+      "external_id": "L4_0087",
+      "parent_external_id": "L3_0012",
+      "level": 4,
+      "name": "Интеграция с ФГИС Зерно",
+      "slug": "l4-0087-интеграция-с-фгис-зерно",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 110
+    },
+    {
+      "external_id": "L4_0088",
+      "parent_external_id": "L3_0012",
+      "level": 4,
+      "name": "Интеграция с ФГИС Сатурн",
+      "slug": "l4-0088-интеграция-с-фгис-сатурн",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 111
+    },
+    {
+      "external_id": "L4_0089",
+      "parent_external_id": "L3_0012",
+      "level": 4,
+      "name": "Интеграция с ВетИС/Меркурий",
+      "slug": "l4-0089-интеграция-с-ветис-меркурий",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 112
+    },
+    {
+      "external_id": "L4_0090",
+      "parent_external_id": "L3_0012",
+      "level": 4,
+      "name": "Интеграция с Хорриот",
+      "slug": "l4-0090-интеграция-с-хорриот",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 113
+    },
+    {
+      "external_id": "L4_0091",
+      "parent_external_id": "L3_0012",
+      "level": 4,
+      "name": "Интеграция с ЕФИС ЗСН",
+      "slug": "l4-0091-интеграция-с-ефис-зсн",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 114
+    },
+    {
+      "external_id": "L4_0092",
+      "parent_external_id": "L3_0012",
+      "level": 4,
+      "name": "Документ-кошелек хозяйства",
+      "slug": "l4-0092-документ-кошелек-хозяйства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 115
+    },
+    {
+      "external_id": "L4_0093",
+      "parent_external_id": "L3_0012",
+      "level": 4,
+      "name": "Автоподготовка отчетности",
+      "slug": "l4-0093-автоподготовка-отчетности",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 116
+    },
+    {
+      "external_id": "L4_0094",
+      "parent_external_id": "L3_0012",
+      "level": 4,
+      "name": "Электронные журналы обработок",
+      "slug": "l4-0094-электронные-журналы-обработок",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 117
+    },
+    {
+      "external_id": "L4_0095",
+      "parent_external_id": "L3_0012",
+      "level": 4,
+      "name": "ЭДО для АПК",
+      "slug": "l4-0095-эдо-для-апк",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 118
+    },
+    {
+      "external_id": "L2_0012",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "BI и аналитика",
+      "slug": "l2-0012-bi-и-аналитика",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 119
+    },
+    {
+      "external_id": "L3_0013",
+      "parent_external_id": "L2_0012",
+      "level": 3,
+      "name": "BI / Data / Dashboards",
+      "slug": "l3-0013-bi-data-dashboards",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 120
+    },
+    {
+      "external_id": "L4_0096",
+      "parent_external_id": "L3_0013",
+      "level": 4,
+      "name": "BI-дашборд руководителя хозяйства",
+      "slug": "l4-0096-bi-дашборд-руководителя-хозяйства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 121
+    },
+    {
+      "external_id": "L4_0097",
+      "parent_external_id": "L3_0013",
+      "level": 4,
+      "name": "Аналитика себестоимости",
+      "slug": "l4-0097-аналитика-себестоимости",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 122
+    },
+    {
+      "external_id": "L4_0098",
+      "parent_external_id": "L3_0013",
+      "level": 4,
+      "name": "Аналитика маржинальности культур",
+      "slug": "l4-0098-аналитика-маржинальности-культур",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 123
+    },
+    {
+      "external_id": "L4_0099",
+      "parent_external_id": "L3_0013",
+      "level": 4,
+      "name": "Аналитика эффективности техники",
+      "slug": "l4-0099-аналитика-эффективности-техники",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 124
+    },
+    {
+      "external_id": "L4_0100",
+      "parent_external_id": "L3_0013",
+      "level": 4,
+      "name": "Аналитика урожайности",
+      "slug": "l4-0100-аналитика-урожайности",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 125
+    },
+    {
+      "external_id": "L4_0101",
+      "parent_external_id": "L3_0013",
+      "level": 4,
+      "name": "Аналитика продаж и цен",
+      "slug": "l4-0101-аналитика-продаж-и-цен",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 126
+    },
+    {
+      "external_id": "L4_0102",
+      "parent_external_id": "L3_0013",
+      "level": 4,
+      "name": "Единое хранилище данных АПК",
+      "slug": "l4-0102-единое-хранилище-данных-апк",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 127
+    },
+    {
+      "external_id": "L4_0103",
+      "parent_external_id": "L3_0013",
+      "level": 4,
+      "name": "MDM хозяйства",
+      "slug": "l4-0103-mdm-хозяйства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 128
+    },
+    {
+      "external_id": "L2_0013",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "AI и ML",
+      "slug": "l2-0013-ai-и-ml",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 129
+    },
+    {
+      "external_id": "L3_0014",
+      "parent_external_id": "L2_0013",
+      "level": 3,
+      "name": "AI applied agriculture",
+      "slug": "l3-0014-ai-applied-agriculture",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 130
+    },
+    {
+      "external_id": "L4_0104",
+      "parent_external_id": "L3_0014",
+      "level": 4,
+      "name": "AI-помощник агронома",
+      "slug": "l4-0104-ai-помощник-агронома",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 131
+    },
+    {
+      "external_id": "L4_0105",
+      "parent_external_id": "L3_0014",
+      "level": 4,
+      "name": "AI-помощник по документам",
+      "slug": "l4-0105-ai-помощник-по-документам",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 132
+    },
+    {
+      "external_id": "L4_0106",
+      "parent_external_id": "L3_0014",
+      "level": 4,
+      "name": "Голосовой ассистент для АПК",
+      "slug": "l4-0106-голосовой-ассистент-для-апк",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 133
+    },
+    {
+      "external_id": "L4_0107",
+      "parent_external_id": "L3_0014",
+      "level": 4,
+      "name": "Скоринговая модель хозяйства",
+      "slug": "l4-0107-скоринговая-модель-хозяйства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 134
+    },
+    {
+      "external_id": "L4_0108",
+      "parent_external_id": "L3_0014",
+      "level": 4,
+      "name": "Прогнозирование урожайности AI",
+      "slug": "l4-0108-прогнозирование-урожайности-ai",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 135
+    },
+    {
+      "external_id": "L4_0109",
+      "parent_external_id": "L3_0014",
+      "level": 4,
+      "name": "Распознавание болезней растений",
+      "slug": "l4-0109-распознавание-болезней-растений",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 136
+    },
+    {
+      "external_id": "L4_0110",
+      "parent_external_id": "L3_0014",
+      "level": 4,
+      "name": "Распознавание животных и поведения",
+      "slug": "l4-0110-распознавание-животных-и-поведения",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 137
+    },
+    {
+      "external_id": "L4_0111",
+      "parent_external_id": "L3_0014",
+      "level": 4,
+      "name": "Оптимизация рационов AI",
+      "slug": "l4-0111-оптимизация-рационов-ai",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 138
+    },
+    {
+      "external_id": "L4_0112",
+      "parent_external_id": "L3_0014",
+      "level": 4,
+      "name": "Оптимизация маршрутов AI",
+      "slug": "l4-0112-оптимизация-маршрутов-ai",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 139
+    },
+    {
+      "external_id": "L4_0113",
+      "parent_external_id": "L3_0014",
+      "level": 4,
+      "name": "Чат-бот поддержки фермера",
+      "slug": "l4-0113-чат-бот-поддержки-фермера",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 140
+    },
+    {
+      "external_id": "L2_0014",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Интеграции и данные",
+      "slug": "l2-0014-интеграции-и-данные",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 141
+    },
+    {
+      "external_id": "L3_0015",
+      "parent_external_id": "L2_0014",
+      "level": 3,
+      "name": "Integration / API / ESB",
+      "slug": "l3-0015-integration-api-esb",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 142
+    },
+    {
+      "external_id": "L4_0114",
+      "parent_external_id": "L3_0015",
+      "level": 4,
+      "name": "Интеграционная шина данных",
+      "slug": "l4-0114-интеграционная-шина-данных",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 143
+    },
+    {
+      "external_id": "L4_0115",
+      "parent_external_id": "L3_0015",
+      "level": 4,
+      "name": "API Management для АПК",
+      "slug": "l4-0115-api-management-для-апк",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 144
+    },
+    {
+      "external_id": "L4_0116",
+      "parent_external_id": "L3_0015",
+      "level": 4,
+      "name": "Коннекторы к 1С",
+      "slug": "l4-0116-коннекторы-к-1с",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 145
+    },
+    {
+      "external_id": "L4_0117",
+      "parent_external_id": "L3_0015",
+      "level": 4,
+      "name": "Коннекторы к ФГИС",
+      "slug": "l4-0117-коннекторы-к-фгис",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 146
+    },
+    {
+      "external_id": "L4_0118",
+      "parent_external_id": "L3_0015",
+      "level": 4,
+      "name": "Коннекторы к телематике",
+      "slug": "l4-0118-коннекторы-к-телематике",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 147
+    },
+    {
+      "external_id": "L4_0119",
+      "parent_external_id": "L3_0015",
+      "level": 4,
+      "name": "Коннекторы к датчикам",
+      "slug": "l4-0119-коннекторы-к-датчикам",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 148
+    },
+    {
+      "external_id": "L4_0120",
+      "parent_external_id": "L3_0015",
+      "level": 4,
+      "name": "ETL/ELT агроданных",
+      "slug": "l4-0120-etl-elt-агроданных",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 149
+    },
+    {
+      "external_id": "L4_0121",
+      "parent_external_id": "L3_0015",
+      "level": 4,
+      "name": "Data Lake хозяйства",
+      "slug": "l4-0121-data-lake-хозяйства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 150
+    },
+    {
+      "external_id": "L4_0122",
+      "parent_external_id": "L3_0015",
+      "level": 4,
+      "name": "Событийная интеграция",
+      "slug": "l4-0122-событийная-интеграция",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 151
+    },
+    {
+      "external_id": "L2_0015",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Господдержка и финансы",
+      "slug": "l2-0015-господдержка-и-финансы",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 152
+    },
+    {
+      "external_id": "L3_0016",
+      "parent_external_id": "L2_0015",
+      "level": 3,
+      "name": "Subsidies / Finance / Insurance",
+      "slug": "l3-0016-subsidies-finance-insurance",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 153
+    },
+    {
+      "external_id": "L4_0123",
+      "parent_external_id": "L3_0016",
+      "level": 4,
+      "name": "Навигатор мер поддержки",
+      "slug": "l4-0123-навигатор-мер-поддержки",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 154
+    },
+    {
+      "external_id": "L4_0124",
+      "parent_external_id": "L3_0016",
+      "level": 4,
+      "name": "Pre-check субсидий и грантов",
+      "slug": "l4-0124-pre-check-субсидий-и-грантов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 155
+    },
+    {
+      "external_id": "L4_0125",
+      "parent_external_id": "L3_0016",
+      "level": 4,
+      "name": "Подготовка заявки на грант",
+      "slug": "l4-0125-подготовка-заявки-на-грант",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 156
+    },
+    {
+      "external_id": "L4_0126",
+      "parent_external_id": "L3_0016",
+      "level": 4,
+      "name": "Льготный кредитный lead-hub",
+      "slug": "l4-0126-льготный-кредитный-lead-hub",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 157
+    },
+    {
+      "external_id": "L4_0127",
+      "parent_external_id": "L3_0016",
+      "level": 4,
+      "name": "Лизинговый lead-hub",
+      "slug": "l4-0127-лизинговый-lead-hub",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 158
+    },
+    {
+      "external_id": "L4_0128",
+      "parent_external_id": "L3_0016",
+      "level": 4,
+      "name": "Агрострахование и risk scoring",
+      "slug": "l4-0128-агрострахование-и-risk-scoring",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 159
+    },
+    {
+      "external_id": "L4_0129",
+      "parent_external_id": "L3_0016",
+      "level": 4,
+      "name": "Калькулятор ROI внедрения",
+      "slug": "l4-0129-калькулятор-roi-внедрения",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 160
+    },
+    {
+      "external_id": "L4_0130",
+      "parent_external_id": "L3_0016",
+      "level": 4,
+      "name": "Финансовое планирование хозяйства",
+      "slug": "l4-0130-финансовое-планирование-хозяйства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 161
+    },
+    {
+      "external_id": "L2_0016",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Маркетплейс и сервисы",
+      "slug": "l2-0016-маркетплейс-и-сервисы",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 162
+    },
+    {
+      "external_id": "L3_0017",
+      "parent_external_id": "L2_0016",
+      "level": 3,
+      "name": "Marketplace / Service orchestration",
+      "slug": "l3-0017-marketplace-service-orchestration",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 163
+    },
+    {
+      "external_id": "L4_0131",
+      "parent_external_id": "L3_0017",
+      "level": 4,
+      "name": "Маркетплейс цифровых решений",
+      "slug": "l4-0131-маркетплейс-цифровых-решений",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 164
+    },
+    {
+      "external_id": "L4_0132",
+      "parent_external_id": "L3_0017",
+      "level": 4,
+      "name": "Маркетплейс услуг и аренды техники",
+      "slug": "l4-0132-маркетплейс-услуг-и-аренды-техники",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 165
+    },
+    {
+      "external_id": "L4_0133",
+      "parent_external_id": "L3_0017",
+      "level": 4,
+      "name": "RFQ-запрос котировок",
+      "slug": "l4-0133-rfq-запрос-котировок",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 166
+    },
+    {
+      "external_id": "L4_0134",
+      "parent_external_id": "L3_0017",
+      "level": 4,
+      "name": "Сервисный заказ и SLA",
+      "slug": "l4-0134-сервисный-заказ-и-sla",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 167
+    },
+    {
+      "external_id": "L4_0135",
+      "parent_external_id": "L3_0017",
+      "level": 4,
+      "name": "Проверка поставщиков",
+      "slug": "l4-0135-проверка-поставщиков",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 168
+    },
+    {
+      "external_id": "L4_0136",
+      "parent_external_id": "L3_0017",
+      "level": 4,
+      "name": "Рейтинги и отзывы исполнителей",
+      "slug": "l4-0136-рейтинги-и-отзывы-исполнителей",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 169
+    },
+    {
+      "external_id": "L4_0137",
+      "parent_external_id": "L3_0017",
+      "level": 4,
+      "name": "Управление заявками хозяйства",
+      "slug": "l4-0137-управление-заявками-хозяйства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 170
+    },
+    {
+      "external_id": "L4_0138",
+      "parent_external_id": "L3_0017",
+      "level": 4,
+      "name": "Каталог запчастей и аналогов",
+      "slug": "l4-0138-каталог-запчастей-и-аналогов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 171
+    },
+    {
+      "external_id": "L2_0017",
+      "parent_external_id": "L1_0001",
+      "level": 2,
+      "name": "Обучение и знания",
+      "slug": "l2-0017-обучение-и-знания",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 172
+    },
+    {
+      "external_id": "L3_0018",
+      "parent_external_id": "L2_0017",
+      "level": 3,
+      "name": "Knowledge / Advisory / Community",
+      "slug": "l3-0018-knowledge-advisory-community",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 173
+    },
+    {
+      "external_id": "L4_0139",
+      "parent_external_id": "L3_0018",
+      "level": 4,
+      "name": "База знаний АПК",
+      "slug": "l4-0139-база-знаний-апк",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 174
+    },
+    {
+      "external_id": "L4_0140",
+      "parent_external_id": "L3_0018",
+      "level": 4,
+      "name": "Экспертные консультации",
+      "slug": "l4-0140-экспертные-консультации",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 175
+    },
+    {
+      "external_id": "L4_0141",
+      "parent_external_id": "L3_0018",
+      "level": 4,
+      "name": "Микрокурсы для фермеров",
+      "slug": "l4-0141-микрокурсы-для-фермеров",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 176
+    },
+    {
+      "external_id": "L4_0142",
+      "parent_external_id": "L3_0018",
+      "level": 4,
+      "name": "Профессиональные чаты",
+      "slug": "l4-0142-профессиональные-чаты",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 177
+    },
+    {
+      "external_id": "L4_0143",
+      "parent_external_id": "L3_0018",
+      "level": 4,
+      "name": "Сезонные чек-листы",
+      "slug": "l4-0143-сезонные-чек-листы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 178
+    },
+    {
+      "external_id": "L4_0144",
+      "parent_external_id": "L3_0018",
+      "level": 4,
+      "name": "Агрономические рекомендации",
+      "slug": "l4-0144-агрономические-рекомендации",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 179
+    },
+    {
+      "external_id": "L4_0145",
+      "parent_external_id": "L3_0018",
+      "level": 4,
+      "name": "Ветеринарные рекомендации",
+      "slug": "l4-0145-ветеринарные-рекомендации",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 180
+    },
+    {
+      "external_id": "L1_0002",
+      "parent_external_id": null,
+      "level": 1,
+      "name": "Hardware",
+      "slug": "l1-0002-hardware",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 181
+    },
+    {
+      "external_id": "L2_0018",
+      "parent_external_id": "L1_0002",
+      "level": 2,
+      "name": "Датчики и IoT",
+      "slug": "l2-0018-датчики-и-iot",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 182
+    },
+    {
+      "external_id": "L3_0019",
+      "parent_external_id": "L2_0018",
+      "level": 3,
+      "name": "Sensors",
+      "slug": "l3-0019-sensors",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 183
+    },
+    {
+      "external_id": "L4_0146",
+      "parent_external_id": "L3_0019",
+      "level": 4,
+      "name": "Датчики влажности почвы",
+      "slug": "l4-0146-датчики-влажности-почвы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 184
+    },
+    {
+      "external_id": "L4_0147",
+      "parent_external_id": "L3_0019",
+      "level": 4,
+      "name": "Метеостанции",
+      "slug": "l4-0147-метеостанции",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 185
+    },
+    {
+      "external_id": "L4_0148",
+      "parent_external_id": "L3_0019",
+      "level": 4,
+      "name": "Датчики температуры хранения",
+      "slug": "l4-0148-датчики-температуры-хранения",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 186
+    },
+    {
+      "external_id": "L4_0149",
+      "parent_external_id": "L3_0019",
+      "level": 4,
+      "name": "Датчики микроклимата теплиц",
+      "slug": "l4-0149-датчики-микроклимата-теплиц",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 187
+    },
+    {
+      "external_id": "L4_0150",
+      "parent_external_id": "L3_0019",
+      "level": 4,
+      "name": "Датчики качества воздуха",
+      "slug": "l4-0150-датчики-качества-воздуха",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 188
+    },
+    {
+      "external_id": "L4_0151",
+      "parent_external_id": "L3_0019",
+      "level": 4,
+      "name": "Весовые системы",
+      "slug": "l4-0151-весовые-системы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 189
+    },
+    {
+      "external_id": "L4_0152",
+      "parent_external_id": "L3_0019",
+      "level": 4,
+      "name": "RFID-метки животных",
+      "slug": "l4-0152-rfid-метки-животных",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 190
+    },
+    {
+      "external_id": "L4_0153",
+      "parent_external_id": "L3_0019",
+      "level": 4,
+      "name": "Датчики активности животных",
+      "slug": "l4-0153-датчики-активности-животных",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 191
+    },
+    {
+      "external_id": "L4_0154",
+      "parent_external_id": "L3_0019",
+      "level": 4,
+      "name": "Датчики топлива",
+      "slug": "l4-0154-датчики-топлива",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 192
+    },
+    {
+      "external_id": "L4_0155",
+      "parent_external_id": "L3_0019",
+      "level": 4,
+      "name": "Контроллеры полива",
+      "slug": "l4-0155-контроллеры-полива",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 193
+    },
+    {
+      "external_id": "L2_0019",
+      "parent_external_id": "L1_0002",
+      "level": 2,
+      "name": "Робототехника",
+      "slug": "l2-0019-робототехника",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 194
+    },
+    {
+      "external_id": "L3_0020",
+      "parent_external_id": "L2_0019",
+      "level": 3,
+      "name": "Robots",
+      "slug": "l3-0020-robots",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 195
+    },
+    {
+      "external_id": "L4_0156",
+      "parent_external_id": "L3_0020",
+      "level": 4,
+      "name": "Складские роботы",
+      "slug": "l4-0156-складские-роботы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 196
+    },
+    {
+      "external_id": "L4_0157",
+      "parent_external_id": "L3_0020",
+      "level": 4,
+      "name": "Полевые роботы",
+      "slug": "l4-0157-полевые-роботы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 197
+    },
+    {
+      "external_id": "L4_0158",
+      "parent_external_id": "L3_0020",
+      "level": 4,
+      "name": "Роботы для теплиц",
+      "slug": "l4-0158-роботы-для-теплиц",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 198
+    },
+    {
+      "external_id": "L4_0159",
+      "parent_external_id": "L3_0020",
+      "level": 4,
+      "name": "Роботы для доения",
+      "slug": "l4-0159-роботы-для-доения",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 199
+    },
+    {
+      "external_id": "L4_0160",
+      "parent_external_id": "L3_0020",
+      "level": 4,
+      "name": "Роботы для кормления",
+      "slug": "l4-0160-роботы-для-кормления",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 200
+    },
+    {
+      "external_id": "L4_0161",
+      "parent_external_id": "L3_0020",
+      "level": 4,
+      "name": "Роботы для сортировки",
+      "slug": "l4-0161-роботы-для-сортировки",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 201
+    },
+    {
+      "external_id": "L4_0162",
+      "parent_external_id": "L3_0020",
+      "level": 4,
+      "name": "Роботы для уборки урожая",
+      "slug": "l4-0162-роботы-для-уборки-урожая",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 202
+    },
+    {
+      "external_id": "L4_0163",
+      "parent_external_id": "L3_0020",
+      "level": 4,
+      "name": "Автономные платформы",
+      "slug": "l4-0163-автономные-платформы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 203
+    },
+    {
+      "external_id": "L2_0020",
+      "parent_external_id": "L1_0002",
+      "level": 2,
+      "name": "Компьютерное зрение",
+      "slug": "l2-0020-компьютерное-зрение",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 204
+    },
+    {
+      "external_id": "L3_0021",
+      "parent_external_id": "L2_0020",
+      "level": 3,
+      "name": "Computer vision devices",
+      "slug": "l3-0021-computer-vision-devices",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 205
+    },
+    {
+      "external_id": "L4_0164",
+      "parent_external_id": "L3_0021",
+      "level": 4,
+      "name": "Камеры контроля растений",
+      "slug": "l4-0164-камеры-контроля-растений",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 206
+    },
+    {
+      "external_id": "L4_0165",
+      "parent_external_id": "L3_0021",
+      "level": 4,
+      "name": "Камеры сортировки продукции",
+      "slug": "l4-0165-камеры-сортировки-продукции",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 207
+    },
+    {
+      "external_id": "L4_0166",
+      "parent_external_id": "L3_0021",
+      "level": 4,
+      "name": "Камеры контроля животных",
+      "slug": "l4-0166-камеры-контроля-животных",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 208
+    },
+    {
+      "external_id": "L4_0167",
+      "parent_external_id": "L3_0021",
+      "level": 4,
+      "name": "Камеры безопасности объектов",
+      "slug": "l4-0167-камеры-безопасности-объектов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 209
+    },
+    {
+      "external_id": "L4_0168",
+      "parent_external_id": "L3_0021",
+      "level": 4,
+      "name": "Системы контроля болезней растений",
+      "slug": "l4-0168-системы-контроля-болезней-растений",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 210
+    },
+    {
+      "external_id": "L4_0169",
+      "parent_external_id": "L3_0021",
+      "level": 4,
+      "name": "Системы визуального контроля качества",
+      "slug": "l4-0169-системы-визуального-контроля-качества",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 211
+    },
+    {
+      "external_id": "L4_0170",
+      "parent_external_id": "L3_0021",
+      "level": 4,
+      "name": "Edge-комплексы компьютерного зрения",
+      "slug": "l4-0170-edge-комплексы-компьютерного-зрения",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 212
+    },
+    {
+      "external_id": "L2_0021",
+      "parent_external_id": "L1_0002",
+      "level": 2,
+      "name": "БПЛА и дистанционный мониторинг",
+      "slug": "l2-0021-бпла-и-дистанционный-мониторинг",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 213
+    },
+    {
+      "external_id": "L3_0022",
+      "parent_external_id": "L2_0021",
+      "level": 3,
+      "name": "UAV",
+      "slug": "l3-0022-uav",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 214
+    },
+    {
+      "external_id": "L4_0171",
+      "parent_external_id": "L3_0022",
+      "level": 4,
+      "name": "БПЛА для съемки полей",
+      "slug": "l4-0171-бпла-для-съемки-полей",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 215
+    },
+    {
+      "external_id": "L4_0172",
+      "parent_external_id": "L3_0022",
+      "level": 4,
+      "name": "БПЛА для внесения средств",
+      "slug": "l4-0172-бпла-для-внесения-средств",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 216
+    },
+    {
+      "external_id": "L4_0173",
+      "parent_external_id": "L3_0022",
+      "level": 4,
+      "name": "БПЛА для мониторинга животных",
+      "slug": "l4-0173-бпла-для-мониторинга-животных",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 217
+    },
+    {
+      "external_id": "L4_0174",
+      "parent_external_id": "L3_0022",
+      "level": 4,
+      "name": "БПЛА для инвентаризации посевов",
+      "slug": "l4-0174-бпла-для-инвентаризации-посевов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 218
+    },
+    {
+      "external_id": "L4_0175",
+      "parent_external_id": "L3_0022",
+      "level": 4,
+      "name": "Наземные станции БПЛА",
+      "slug": "l4-0175-наземные-станции-бпла",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 219
+    },
+    {
+      "external_id": "L4_0176",
+      "parent_external_id": "L3_0022",
+      "level": 4,
+      "name": "Обработка данных БПЛА",
+      "slug": "l4-0176-обработка-данных-бпла",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 220
+    },
+    {
+      "external_id": "L2_0022",
+      "parent_external_id": "L1_0002",
+      "level": 2,
+      "name": "Техника и навигация",
+      "slug": "l2-0022-техника-и-навигация",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 221
+    },
+    {
+      "external_id": "L3_0023",
+      "parent_external_id": "L2_0022",
+      "level": 3,
+      "name": "Machinery devices",
+      "slug": "l3-0023-machinery-devices",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 222
+    },
+    {
+      "external_id": "L4_0177",
+      "parent_external_id": "L3_0023",
+      "level": 4,
+      "name": "GPS/ГЛОНАСС терминалы",
+      "slug": "l4-0177-gps-глонасс-терминалы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 223
+    },
+    {
+      "external_id": "L4_0178",
+      "parent_external_id": "L3_0023",
+      "level": 4,
+      "name": "Автопилоты сельхозтехники",
+      "slug": "l4-0178-автопилоты-сельхозтехники",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 224
+    },
+    {
+      "external_id": "L4_0179",
+      "parent_external_id": "L3_0023",
+      "level": 4,
+      "name": "RTK-базы",
+      "slug": "l4-0179-rtk-базы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 225
+    },
+    {
+      "external_id": "L4_0180",
+      "parent_external_id": "L3_0023",
+      "level": 4,
+      "name": "Бортовые компьютеры техники",
+      "slug": "l4-0180-бортовые-компьютеры-техники",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 226
+    },
+    {
+      "external_id": "L4_0181",
+      "parent_external_id": "L3_0023",
+      "level": 4,
+      "name": "Датчики высева",
+      "slug": "l4-0181-датчики-высева",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 227
+    },
+    {
+      "external_id": "L4_0182",
+      "parent_external_id": "L3_0023",
+      "level": 4,
+      "name": "Датчики урожайности",
+      "slug": "l4-0182-датчики-урожайности",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 228
+    },
+    {
+      "external_id": "L4_0183",
+      "parent_external_id": "L3_0023",
+      "level": 4,
+      "name": "Контроль внесения удобрений/СЗР",
+      "slug": "l4-0183-контроль-внесения-удобрений-сзр",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 229
+    },
+    {
+      "external_id": "L2_0023",
+      "parent_external_id": "L1_0002",
+      "level": 2,
+      "name": "Склад и элеватор",
+      "slug": "l2-0023-склад-и-элеватор",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 230
+    },
+    {
+      "external_id": "L3_0024",
+      "parent_external_id": "L2_0023",
+      "level": 3,
+      "name": "Storage equipment",
+      "slug": "l3-0024-storage-equipment",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 231
+    },
+    {
+      "external_id": "L4_0184",
+      "parent_external_id": "L3_0024",
+      "level": 4,
+      "name": "Системы температурного мониторинга зерна",
+      "slug": "l4-0184-системы-температурного-мониторинга-зерна",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 232
+    },
+    {
+      "external_id": "L4_0185",
+      "parent_external_id": "L3_0024",
+      "level": 4,
+      "name": "Автоматизация зерносушилки",
+      "slug": "l4-0185-автоматизация-зерносушилки",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 233
+    },
+    {
+      "external_id": "L4_0186",
+      "parent_external_id": "L3_0024",
+      "level": 4,
+      "name": "Весовые комплексы",
+      "slug": "l4-0186-весовые-комплексы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 234
+    },
+    {
+      "external_id": "L4_0187",
+      "parent_external_id": "L3_0024",
+      "level": 4,
+      "name": "Сканеры и терминалы склада",
+      "slug": "l4-0187-сканеры-и-терминалы-склада",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 235
+    },
+    {
+      "external_id": "L4_0188",
+      "parent_external_id": "L3_0024",
+      "level": 4,
+      "name": "RFID/штрихкод оборудование",
+      "slug": "l4-0188-rfid-штрихкод-оборудование",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 236
+    },
+    {
+      "external_id": "L4_0189",
+      "parent_external_id": "L3_0024",
+      "level": 4,
+      "name": "Автоматизированные ворота/двор",
+      "slug": "l4-0189-автоматизированные-ворота-двор",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 237
+    },
+    {
+      "external_id": "L2_0024",
+      "parent_external_id": "L1_0002",
+      "level": 2,
+      "name": "Сети и edge",
+      "slug": "l2-0024-сети-и-edge",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 238
+    },
+    {
+      "external_id": "L3_0025",
+      "parent_external_id": "L2_0024",
+      "level": 3,
+      "name": "Infrastructure",
+      "slug": "l3-0025-infrastructure",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 239
+    },
+    {
+      "external_id": "L4_0190",
+      "parent_external_id": "L3_0025",
+      "level": 4,
+      "name": "Полевые IoT-шлюзы",
+      "slug": "l4-0190-полевые-iot-шлюзы",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 240
+    },
+    {
+      "external_id": "L4_0191",
+      "parent_external_id": "L3_0025",
+      "level": 4,
+      "name": "Edge-серверы на объекте",
+      "slug": "l4-0191-edge-серверы-на-объекте",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 241
+    },
+    {
+      "external_id": "L4_0192",
+      "parent_external_id": "L3_0025",
+      "level": 4,
+      "name": "Промышленные контроллеры",
+      "slug": "l4-0192-промышленные-контроллеры",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 242
+    },
+    {
+      "external_id": "L4_0193",
+      "parent_external_id": "L3_0025",
+      "level": 4,
+      "name": "Сети LoRaWAN/NB-IoT",
+      "slug": "l4-0193-сети-lorawan-nb-iot",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 243
+    },
+    {
+      "external_id": "L4_0194",
+      "parent_external_id": "L3_0025",
+      "level": 4,
+      "name": "Промышленный Wi-Fi",
+      "slug": "l4-0194-промышленный-wi-fi",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 244
+    },
+    {
+      "external_id": "L4_0195",
+      "parent_external_id": "L3_0025",
+      "level": 4,
+      "name": "Каналы связи удаленных объектов",
+      "slug": "l4-0195-каналы-связи-удаленных-объектов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 245
+    },
+    {
+      "external_id": "L1_0003",
+      "parent_external_id": null,
+      "level": 1,
+      "name": "IT Services",
+      "slug": "l1-0003-it-services",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 246
+    },
+    {
+      "external_id": "L2_0025",
+      "parent_external_id": "L1_0003",
+      "level": 2,
+      "name": "Системная интеграция",
+      "slug": "l2-0025-системная-интеграция",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 247
+    },
+    {
+      "external_id": "L3_0026",
+      "parent_external_id": "L2_0025",
+      "level": 3,
+      "name": "Integration services",
+      "slug": "l3-0026-integration-services",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 248
+    },
+    {
+      "external_id": "L4_0196",
+      "parent_external_id": "L3_0026",
+      "level": 4,
+      "name": "Внедрение ERP/1С в АПК",
+      "slug": "l4-0196-внедрение-erp-1с-в-апк",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 249
+    },
+    {
+      "external_id": "L4_0197",
+      "parent_external_id": "L3_0026",
+      "level": 4,
+      "name": "Интеграция 1С и ФГИС",
+      "slug": "l4-0197-интеграция-1с-и-фгис",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 250
+    },
+    {
+      "external_id": "L4_0198",
+      "parent_external_id": "L3_0026",
+      "level": 4,
+      "name": "Интеграция телематики и ERP",
+      "slug": "l4-0198-интеграция-телематики-и-erp",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 251
+    },
+    {
+      "external_id": "L4_0199",
+      "parent_external_id": "L3_0026",
+      "level": 4,
+      "name": "Интеграция WMS/TMS/ERP",
+      "slug": "l4-0199-интеграция-wms-tms-erp",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 252
+    },
+    {
+      "external_id": "L4_0200",
+      "parent_external_id": "L3_0026",
+      "level": 4,
+      "name": "Интеграция датчиков и SCADA",
+      "slug": "l4-0200-интеграция-датчиков-и-scada",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 253
+    },
+    {
+      "external_id": "L4_0201",
+      "parent_external_id": "L3_0026",
+      "level": 4,
+      "name": "Построение хранилища данных",
+      "slug": "l4-0201-построение-хранилища-данных",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 254
+    },
+    {
+      "external_id": "L4_0202",
+      "parent_external_id": "L3_0026",
+      "level": 4,
+      "name": "Настройка BI-аналитики",
+      "slug": "l4-0202-настройка-bi-аналитики",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 255
+    },
+    {
+      "external_id": "L4_0203",
+      "parent_external_id": "L3_0026",
+      "level": 4,
+      "name": "Миграция с зарубежных систем",
+      "slug": "l4-0203-миграция-с-зарубежных-систем",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 256
+    },
+    {
+      "external_id": "L2_0026",
+      "parent_external_id": "L1_0003",
+      "level": 2,
+      "name": "Консалтинг",
+      "slug": "l2-0026-консалтинг",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 257
+    },
+    {
+      "external_id": "L3_0027",
+      "parent_external_id": "L2_0026",
+      "level": 3,
+      "name": "Consulting",
+      "slug": "l3-0027-consulting",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 258
+    },
+    {
+      "external_id": "L4_0204",
+      "parent_external_id": "L3_0027",
+      "level": 4,
+      "name": "Аудит цифровой зрелости",
+      "slug": "l4-0204-аудит-цифровой-зрелости",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 259
+    },
+    {
+      "external_id": "L4_0205",
+      "parent_external_id": "L3_0027",
+      "level": 4,
+      "name": "ИТ-стратегия агрохолдинга",
+      "slug": "l4-0205-ит-стратегия-агрохолдинга",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 260
+    },
+    {
+      "external_id": "L4_0206",
+      "parent_external_id": "L3_0027",
+      "level": 4,
+      "name": "Проектирование целевой архитектуры",
+      "slug": "l4-0206-проектирование-целевой-архитектуры",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 261
+    },
+    {
+      "external_id": "L4_0207",
+      "parent_external_id": "L3_0027",
+      "level": 4,
+      "name": "Оптимизация бизнес-процессов",
+      "slug": "l4-0207-оптимизация-бизнес-процессов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 262
+    },
+    {
+      "external_id": "L4_0208",
+      "parent_external_id": "L3_0027",
+      "level": 4,
+      "name": "S&OP-консалтинг",
+      "slug": "l4-0208-s-op-консалтинг",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 263
+    },
+    {
+      "external_id": "L4_0209",
+      "parent_external_id": "L3_0027",
+      "level": 4,
+      "name": "Логистический консалтинг",
+      "slug": "l4-0209-логистический-консалтинг",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 264
+    },
+    {
+      "external_id": "L4_0210",
+      "parent_external_id": "L3_0027",
+      "level": 4,
+      "name": "ТОиР-консалтинг",
+      "slug": "l4-0210-тоир-консалтинг",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 265
+    },
+    {
+      "external_id": "L4_0211",
+      "parent_external_id": "L3_0027",
+      "level": 4,
+      "name": "Консалтинг по импортозамещению",
+      "slug": "l4-0211-консалтинг-по-импортозамещению",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 266
+    },
+    {
+      "external_id": "L2_0027",
+      "parent_external_id": "L1_0003",
+      "level": 2,
+      "name": "Внедрение и сопровождение",
+      "slug": "l2-0027-внедрение-и-сопровождение",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 267
+    },
+    {
+      "external_id": "L3_0028",
+      "parent_external_id": "L2_0027",
+      "level": 3,
+      "name": "Implementation / Support",
+      "slug": "l3-0028-implementation-support",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 268
+    },
+    {
+      "external_id": "L4_0212",
+      "parent_external_id": "L3_0028",
+      "level": 4,
+      "name": "Проектное внедрение цифрового решения",
+      "slug": "l4-0212-проектное-внедрение-цифрового-решения",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 269
+    },
+    {
+      "external_id": "L4_0213",
+      "parent_external_id": "L3_0028",
+      "level": 4,
+      "name": "Обучение пользователей хозяйства",
+      "slug": "l4-0213-обучение-пользователей-хозяйства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 270
+    },
+    {
+      "external_id": "L4_0214",
+      "parent_external_id": "L3_0028",
+      "level": 4,
+      "name": "Техподдержка решения",
+      "slug": "l4-0214-техподдержка-решения",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 271
+    },
+    {
+      "external_id": "L4_0215",
+      "parent_external_id": "L3_0028",
+      "level": 4,
+      "name": "Сопровождение ФГИС-отчетности",
+      "slug": "l4-0215-сопровождение-фгис-отчетности",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 272
+    },
+    {
+      "external_id": "L4_0216",
+      "parent_external_id": "L3_0028",
+      "level": 4,
+      "name": "Сервисное обслуживание оборудования",
+      "slug": "l4-0216-сервисное-обслуживание-оборудования",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 273
+    },
+    {
+      "external_id": "L4_0217",
+      "parent_external_id": "L3_0028",
+      "level": 4,
+      "name": "Полевое обследование объекта",
+      "slug": "l4-0217-полевое-обследование-объекта",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 274
+    },
+    {
+      "external_id": "L4_0218",
+      "parent_external_id": "L3_0028",
+      "level": 4,
+      "name": "Пилотирование решения",
+      "slug": "l4-0218-пилотирование-решения",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 275
+    },
+    {
+      "external_id": "L4_0219",
+      "parent_external_id": "L3_0028",
+      "level": 4,
+      "name": "Управление изменениями",
+      "slug": "l4-0219-управление-изменениями",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 276
+    },
+    {
+      "external_id": "L2_0028",
+      "parent_external_id": "L1_0003",
+      "level": 2,
+      "name": "Заказная разработка",
+      "slug": "l2-0028-заказная-разработка",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 277
+    },
+    {
+      "external_id": "L3_0029",
+      "parent_external_id": "L2_0028",
+      "level": 3,
+      "name": "Custom development",
+      "slug": "l3-0029-custom-development",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 278
+    },
+    {
+      "external_id": "L4_0220",
+      "parent_external_id": "L3_0029",
+      "level": 4,
+      "name": "Разработка личного кабинета хозяйства",
+      "slug": "l4-0220-разработка-личного-кабинета-хозяйства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 279
+    },
+    {
+      "external_id": "L4_0221",
+      "parent_external_id": "L3_0029",
+      "level": 4,
+      "name": "Разработка мобильного приложения АПК",
+      "slug": "l4-0221-разработка-мобильного-приложения-апк",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 280
+    },
+    {
+      "external_id": "L4_0222",
+      "parent_external_id": "L3_0029",
+      "level": 4,
+      "name": "Разработка AI-агента",
+      "slug": "l4-0222-разработка-ai-агента",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 281
+    },
+    {
+      "external_id": "L4_0223",
+      "parent_external_id": "L3_0029",
+      "level": 4,
+      "name": "Разработка интеграционного коннектора",
+      "slug": "l4-0223-разработка-интеграционного-коннектора",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 282
+    },
+    {
+      "external_id": "L4_0224",
+      "parent_external_id": "L3_0029",
+      "level": 4,
+      "name": "Разработка отраслевого микросервиса",
+      "slug": "l4-0224-разработка-отраслевого-микросервиса",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 283
+    },
+    {
+      "external_id": "L4_0225",
+      "parent_external_id": "L3_0029",
+      "level": 4,
+      "name": "Разработка дашбордов",
+      "slug": "l4-0225-разработка-дашбордов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 284
+    },
+    {
+      "external_id": "L4_0226",
+      "parent_external_id": "L3_0029",
+      "level": 4,
+      "name": "Разработка документооборота",
+      "slug": "l4-0226-разработка-документооборота",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 285
+    },
+    {
+      "external_id": "L2_0029",
+      "parent_external_id": "L1_0003",
+      "level": 2,
+      "name": "Кибербезопасность",
+      "slug": "l2-0029-кибербезопасность",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 286
+    },
+    {
+      "external_id": "L3_0030",
+      "parent_external_id": "L2_0029",
+      "level": 3,
+      "name": "Security services",
+      "slug": "l3-0030-security-services",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 287
+    },
+    {
+      "external_id": "L4_0227",
+      "parent_external_id": "L3_0030",
+      "level": 4,
+      "name": "Аудит кибербезопасности АПК",
+      "slug": "l4-0227-аудит-кибербезопасности-апк",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 288
+    },
+    {
+      "external_id": "L4_0228",
+      "parent_external_id": "L3_0030",
+      "level": 4,
+      "name": "Защита промышленного контура OT",
+      "slug": "l4-0228-защита-промышленного-контура-ot",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 289
+    },
+    {
+      "external_id": "L4_0229",
+      "parent_external_id": "L3_0030",
+      "level": 4,
+      "name": "Защита персональных данных",
+      "slug": "l4-0229-защита-персональных-данных",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 290
+    },
+    {
+      "external_id": "L4_0230",
+      "parent_external_id": "L3_0030",
+      "level": 4,
+      "name": "IAM и управление доступами",
+      "slug": "l4-0230-iam-и-управление-доступами",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 291
+    },
+    {
+      "external_id": "L4_0231",
+      "parent_external_id": "L3_0030",
+      "level": 4,
+      "name": "DLP и защита коммерческой тайны",
+      "slug": "l4-0231-dlp-и-защита-коммерческой-тайны",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 292
+    },
+    {
+      "external_id": "L4_0232",
+      "parent_external_id": "L3_0030",
+      "level": 4,
+      "name": "Резервное копирование и DRP",
+      "slug": "l4-0232-резервное-копирование-и-drp",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 293
+    },
+    {
+      "external_id": "L4_0233",
+      "parent_external_id": "L3_0030",
+      "level": 4,
+      "name": "Мониторинг инцидентов",
+      "slug": "l4-0233-мониторинг-инцидентов",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 294
+    },
+    {
+      "external_id": "L2_0030",
+      "parent_external_id": "L1_0003",
+      "level": 2,
+      "name": "Data services",
+      "slug": "l2-0030-data-services",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 295
+    },
+    {
+      "external_id": "L3_0031",
+      "parent_external_id": "L2_0030",
+      "level": 3,
+      "name": "Data / Analytics services",
+      "slug": "l3-0031-data-analytics-services",
+      "is_selectable": false,
+      "notes": null,
+      "sort_order": 296
+    },
+    {
+      "external_id": "L4_0234",
+      "parent_external_id": "L3_0031",
+      "level": 4,
+      "name": "Разметка агроданных",
+      "slug": "l4-0234-разметка-агроданных",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 297
+    },
+    {
+      "external_id": "L4_0235",
+      "parent_external_id": "L3_0031",
+      "level": 4,
+      "name": "Аналитика спутниковых данных как услуга",
+      "slug": "l4-0235-аналитика-спутниковых-данных-как-услуга",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 298
+    },
+    {
+      "external_id": "L4_0236",
+      "parent_external_id": "L3_0031",
+      "level": 4,
+      "name": "Аналитика урожайности как услуга",
+      "slug": "l4-0236-аналитика-урожайности-как-услуга",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 299
+    },
+    {
+      "external_id": "L4_0237",
+      "parent_external_id": "L3_0031",
+      "level": 4,
+      "name": "Скоринг хозяйства как услуга",
+      "slug": "l4-0237-скоринг-хозяйства-как-услуга",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 300
+    },
+    {
+      "external_id": "L4_0238",
+      "parent_external_id": "L3_0031",
+      "level": 4,
+      "name": "Подготовка данных для AI",
+      "slug": "l4-0238-подготовка-данных-для-ai",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 301
+    },
+    {
+      "external_id": "L4_0239",
+      "parent_external_id": "L3_0031",
+      "level": 4,
+      "name": "Нормализация справочников хозяйства",
+      "slug": "l4-0239-нормализация-справочников-хозяйства",
+      "is_selectable": true,
+      "notes": null,
+      "sort_order": 302
+    }
+  ],
+  "field_definitions": [
+    {
+      "field_key": "solution_name",
+      "field_name": "Название решения",
+      "control_type": "free_text",
+      "dictionary_code": null,
+      "allow_other_text": false,
+      "required": true,
+      "block": "Идентификация"
+    },
+    {
+      "field_key": "vendor_name",
+      "field_name": "Компания/партнер",
+      "control_type": "free_text",
+      "dictionary_code": null,
+      "allow_other_text": false,
+      "required": true,
+      "block": "Идентификация"
+    },
+    {
+      "field_key": "partner_type",
+      "field_name": "Тип партнера",
+      "control_type": "dropdown",
+      "dictionary_code": "Dict_Partner_Types",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Идентификация"
+    },
+    {
+      "field_key": "solution_layer",
+      "field_name": "L1 слой",
+      "control_type": "dropdown",
+      "dictionary_code": "Dict_Solution_Layers",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Таксономия"
+    },
+    {
+      "field_key": "l4_solution_types",
+      "field_name": "L4 типы решения",
+      "control_type": "multi_select",
+      "dictionary_code": "Taxonomy_L1_L4",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Таксономия"
+    },
+    {
+      "field_key": "subsectors",
+      "field_name": "Подотрасли АПК",
+      "control_type": "multi_select",
+      "dictionary_code": "Dict_Agri_Subsectors",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Применимость"
+    },
+    {
+      "field_key": "processes",
+      "field_name": "Процессы",
+      "control_type": "multi_select",
+      "dictionary_code": "Dict_Agri_Processes",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Применимость"
+    },
+    {
+      "field_key": "farmer_problems",
+      "field_name": "Проблемы фермера",
+      "control_type": "multi_select",
+      "dictionary_code": "Dict_Farmer_Problems",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Матчинг"
+    },
+    {
+      "field_key": "target_customer_types",
+      "field_name": "Типы клиентов",
+      "control_type": "multi_select",
+      "dictionary_code": "Dict_Customer_Types",
+      "allow_other_text": false,
+      "required": true,
+      "block": "ЦА"
+    },
+    {
+      "field_key": "farm_scale_min",
+      "field_name": "Минимальный масштаб",
+      "control_type": "dropdown",
+      "dictionary_code": "Dict_Farm_Scales",
+      "allow_other_text": false,
+      "required": false,
+      "block": "ЦА"
+    },
+    {
+      "field_key": "digital_maturity_required",
+      "field_name": "Требуемая цифровая зрелость",
+      "control_type": "dropdown",
+      "dictionary_code": "Dict_Digital_Maturity",
+      "allow_other_text": false,
+      "required": false,
+      "block": "Внедрение"
+    },
+    {
+      "field_key": "deployment_model",
+      "field_name": "Модель развертывания",
+      "control_type": "multi_select",
+      "dictionary_code": "Dict_Deployment",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Технология"
+    },
+    {
+      "field_key": "implementation_format",
+      "field_name": "Формат внедрения",
+      "control_type": "dropdown",
+      "dictionary_code": "Dict_Implementation",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Внедрение"
+    },
+    {
+      "field_key": "payment_model",
+      "field_name": "Модель оплаты",
+      "control_type": "multi_select",
+      "dictionary_code": "Dict_Payment_Models",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Экономика"
+    },
+    {
+      "field_key": "cost_start_rub",
+      "field_name": "Стартовая стоимость, ₽",
+      "control_type": "number",
+      "dictionary_code": null,
+      "allow_other_text": false,
+      "required": false,
+      "block": "Экономика"
+    },
+    {
+      "field_key": "cost_subscription_rub_year",
+      "field_name": "Подписка/год, ₽",
+      "control_type": "number",
+      "dictionary_code": null,
+      "allow_other_text": false,
+      "required": false,
+      "block": "Экономика"
+    },
+    {
+      "field_key": "cost_per_ha_rub",
+      "field_name": "Стоимость ₽/га",
+      "control_type": "number",
+      "dictionary_code": null,
+      "allow_other_text": false,
+      "required": false,
+      "block": "Экономика"
+    },
+    {
+      "field_key": "cost_per_head_rub",
+      "field_name": "Стоимость ₽/голову",
+      "control_type": "number",
+      "dictionary_code": null,
+      "allow_other_text": false,
+      "required": false,
+      "block": "Экономика"
+    },
+    {
+      "field_key": "payback_months",
+      "field_name": "Срок окупаемости, мес.",
+      "control_type": "number",
+      "dictionary_code": null,
+      "allow_other_text": false,
+      "required": false,
+      "block": "Экономика"
+    },
+    {
+      "field_key": "effect_types",
+      "field_name": "Типы эффекта",
+      "control_type": "multi_select",
+      "dictionary_code": "Dict_Economic_Effects",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Эффект"
+    },
+    {
+      "field_key": "kpi_units",
+      "field_name": "KPI/единицы эффекта",
+      "control_type": "multi_select",
+      "dictionary_code": "Dict_KPI_Units",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Эффект"
+    },
+    {
+      "field_key": "declared_saving_per_ha",
+      "field_name": "Заявленная экономия ₽/га",
+      "control_type": "number",
+      "dictionary_code": null,
+      "allow_other_text": false,
+      "required": false,
+      "block": "Эффект"
+    },
+    {
+      "field_key": "declared_saving_per_head",
+      "field_name": "Заявленная экономия ₽/голову",
+      "control_type": "number",
+      "dictionary_code": null,
+      "allow_other_text": false,
+      "required": false,
+      "block": "Эффект"
+    },
+    {
+      "field_key": "integrations",
+      "field_name": "Интеграции",
+      "control_type": "multi_select",
+      "dictionary_code": "Dict_Integrations",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Интеграции"
+    },
+    {
+      "field_key": "data_sources",
+      "field_name": "Источники данных",
+      "control_type": "multi_select",
+      "dictionary_code": "Dict_Data_Sources",
+      "allow_other_text": false,
+      "required": false,
+      "block": "Данные"
+    },
+    {
+      "field_key": "regions",
+      "field_name": "Регионы работы",
+      "control_type": "multi_select",
+      "dictionary_code": "Dict_Regions",
+      "allow_other_text": false,
+      "required": true,
+      "block": "География"
+    },
+    {
+      "field_key": "user_roles",
+      "field_name": "Пользовательские роли",
+      "control_type": "multi_select",
+      "dictionary_code": "Dict_User_Roles",
+      "allow_other_text": false,
+      "required": true,
+      "block": "ЦА"
+    },
+    {
+      "field_key": "evidence_level",
+      "field_name": "Уровень доказанности",
+      "control_type": "dropdown",
+      "dictionary_code": "Dict_Evidence_Levels",
+      "allow_other_text": false,
+      "required": true,
+      "block": "Доказанность"
+    },
+    {
+      "field_key": "case_description",
+      "field_name": "Описание кейса",
+      "control_type": "long_text",
+      "dictionary_code": null,
+      "allow_other_text": true,
+      "required": false,
+      "block": "Доказанность"
+    },
+    {
+      "field_key": "limitations",
+      "field_name": "Ограничения применения",
+      "control_type": "long_text",
+      "dictionary_code": null,
+      "allow_other_text": true,
+      "required": false,
+      "block": "Риски"
+    },
+    {
+      "field_key": "implementation_requirements",
+      "field_name": "Требования к внедрению",
+      "control_type": "long_text",
+      "dictionary_code": null,
+      "allow_other_text": true,
+      "required": false,
+      "block": "Внедрение"
+    },
+    {
+      "field_key": "free_description",
+      "field_name": "Краткое описание решения",
+      "control_type": "long_text",
+      "dictionary_code": null,
+      "allow_other_text": true,
+      "required": true,
+      "block": "Описание"
+    }
+  ],
+  "scoring_dimensions": [
+    {
+      "score_key": "subsector_match",
+      "score_name": "Совпадение подотрасли",
+      "weight": 15,
+      "source_dictionary": "Dict_Agri_Subsectors",
+      "notes": "Жесткий вес"
+    },
+    {
+      "score_key": "process_match",
+      "score_name": "Совпадение процесса",
+      "weight": 15,
+      "source_dictionary": "Dict_Agri_Processes",
+      "notes": "Жесткий вес"
+    },
+    {
+      "score_key": "problem_match",
+      "score_name": "Совпадение проблемы/JTBD",
+      "weight": 25,
+      "source_dictionary": "Dict_Farmer_Problems",
+      "notes": "Главный критерий"
+    },
+    {
+      "score_key": "scale_fit",
+      "score_name": "Подходит по масштабу",
+      "weight": 10,
+      "source_dictionary": "Dict_Farm_Scales",
+      "notes": "С учетом min/max"
+    },
+    {
+      "score_key": "budget_fit",
+      "score_name": "Подходит по бюджету",
+      "weight": 10,
+      "source_dictionary": "числовые поля",
+      "notes": "Сравнение бюджета фермера и стоимости"
+    },
+    {
+      "score_key": "integration_fit",
+      "score_name": "Есть нужные интеграции",
+      "weight": 10,
+      "source_dictionary": "Dict_Integrations",
+      "notes": "1С, ФГИС, техника и др."
+    },
+    {
+      "score_key": "digital_maturity_fit",
+      "score_name": "Подходит по цифровой зрелости",
+      "weight": 5,
+      "source_dictionary": "Dict_Digital_Maturity",
+      "notes": "Не предлагать слишком сложное решение"
+    },
+    {
+      "score_key": "region_fit",
+      "score_name": "Работает в регионе",
+      "weight": 5,
+      "source_dictionary": "Dict_Regions",
+      "notes": "Федерально или регионально"
+    },
+    {
+      "score_key": "evidence_score",
+      "score_name": "Доказанность",
+      "weight": 5,
+      "source_dictionary": "Dict_Evidence_Levels",
+      "notes": "Кейсы, пилоты, подтверждение"
+    }
+  ],
+  "supplier_form": [
+    {
+      "field_key": "solution_name",
+      "field_name": "Название решения",
+      "input_type": "free_text",
+      "required": "Да"
+    },
+    {
+      "field_key": "vendor_name",
+      "field_name": "Компания/партнер",
+      "input_type": "free_text",
+      "required": "Да"
+    },
+    {
+      "field_key": "partner_type",
+      "field_name": "Тип партнера",
+      "input_type": "dropdown",
+      "dictionary_sheet": "Dict_Partner_Types",
+      "required": "Да"
+    },
+    {
+      "field_key": "solution_layer",
+      "field_name": "L1 слой",
+      "input_type": "dropdown",
+      "dictionary_sheet": "Dict_Solution_Layers",
+      "required": "Да"
+    },
+    {
+      "field_key": "l4_solution_types",
+      "field_name": "L4 типы решения",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Taxonomy_L1_L4",
+      "required": "Да"
+    },
+    {
+      "field_key": "subsectors",
+      "field_name": "Подотрасли АПК",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Agri_Subsectors",
+      "required": "Да"
+    },
+    {
+      "field_key": "processes",
+      "field_name": "Процессы",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Agri_Processes",
+      "required": "Да"
+    },
+    {
+      "field_key": "farmer_problems",
+      "field_name": "Проблемы фермера",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Farmer_Problems",
+      "required": "Да"
+    },
+    {
+      "field_key": "target_customer_types",
+      "field_name": "Типы клиентов",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Customer_Types",
+      "required": "Да"
+    },
+    {
+      "field_key": "farm_scale_min",
+      "field_name": "Минимальный масштаб",
+      "input_type": "dropdown",
+      "dictionary_sheet": "Dict_Farm_Scales",
+      "required": "Нет"
+    },
+    {
+      "field_key": "digital_maturity_required",
+      "field_name": "Требуемая цифровая зрелость",
+      "input_type": "dropdown",
+      "dictionary_sheet": "Dict_Digital_Maturity",
+      "required": "Нет"
+    },
+    {
+      "field_key": "deployment_model",
+      "field_name": "Модель развертывания",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Deployment",
+      "required": "Да"
+    },
+    {
+      "field_key": "implementation_format",
+      "field_name": "Формат внедрения",
+      "input_type": "dropdown",
+      "dictionary_sheet": "Dict_Implementation",
+      "required": "Да"
+    },
+    {
+      "field_key": "payment_model",
+      "field_name": "Модель оплаты",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Payment_Models",
+      "required": "Да"
+    },
+    {
+      "field_key": "cost_start_rub",
+      "field_name": "Стартовая стоимость, ₽",
+      "input_type": "number",
+      "required": "Нет"
+    },
+    {
+      "field_key": "cost_subscription_rub_year",
+      "field_name": "Подписка/год, ₽",
+      "input_type": "number",
+      "required": "Нет"
+    },
+    {
+      "field_key": "cost_per_ha_rub",
+      "field_name": "Стоимость ₽/га",
+      "input_type": "number",
+      "required": "Нет"
+    },
+    {
+      "field_key": "cost_per_head_rub",
+      "field_name": "Стоимость ₽/голову",
+      "input_type": "number",
+      "required": "Нет"
+    },
+    {
+      "field_key": "payback_months",
+      "field_name": "Срок окупаемости, мес.",
+      "input_type": "number",
+      "required": "Нет"
+    },
+    {
+      "field_key": "effect_types",
+      "field_name": "Типы эффекта",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Economic_Effects",
+      "required": "Да"
+    },
+    {
+      "field_key": "kpi_units",
+      "field_name": "KPI/единицы эффекта",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_KPI_Units",
+      "required": "Да"
+    },
+    {
+      "field_key": "declared_saving_per_ha",
+      "field_name": "Заявленная экономия ₽/га",
+      "input_type": "number",
+      "required": "Нет"
+    },
+    {
+      "field_key": "declared_saving_per_head",
+      "field_name": "Заявленная экономия ₽/голову",
+      "input_type": "number",
+      "required": "Нет"
+    },
+    {
+      "field_key": "integrations",
+      "field_name": "Интеграции",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Integrations",
+      "required": "Да"
+    },
+    {
+      "field_key": "data_sources",
+      "field_name": "Источники данных",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Data_Sources",
+      "required": "Нет"
+    },
+    {
+      "field_key": "regions",
+      "field_name": "Регионы работы",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Regions",
+      "required": "Да"
+    },
+    {
+      "field_key": "user_roles",
+      "field_name": "Пользовательские роли",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_User_Roles",
+      "required": "Да"
+    },
+    {
+      "field_key": "evidence_level",
+      "field_name": "Уровень доказанности",
+      "input_type": "dropdown",
+      "dictionary_sheet": "Dict_Evidence_Levels",
+      "required": "Да"
+    },
+    {
+      "field_key": "case_description",
+      "field_name": "Описание кейса",
+      "input_type": "long_text",
+      "required": "Нет"
+    },
+    {
+      "field_key": "limitations",
+      "field_name": "Ограничения применения",
+      "input_type": "long_text",
+      "required": "Нет"
+    },
+    {
+      "field_key": "implementation_requirements",
+      "field_name": "Требования к внедрению",
+      "input_type": "long_text",
+      "required": "Нет"
+    },
+    {
+      "field_key": "free_description",
+      "field_name": "Краткое описание решения",
+      "input_type": "long_text",
+      "required": "Да"
+    }
+  ],
+  "farmer_form": [
+    {
+      "field_key": "farmer_type",
+      "field_name": "Тип хозяйства",
+      "input_type": "dropdown",
+      "dictionary_sheet": "Dict_Customer_Types",
+      "required": "Да"
+    },
+    {
+      "field_key": "region",
+      "field_name": "Регион",
+      "input_type": "dropdown",
+      "dictionary_sheet": "Dict_Regions",
+      "required": "Да"
+    },
+    {
+      "field_key": "subsectors",
+      "field_name": "Подотрасли",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Agri_Subsectors",
+      "required": "Да"
+    },
+    {
+      "field_key": "farm_scale",
+      "field_name": "Масштаб",
+      "input_type": "dropdown",
+      "dictionary_sheet": "Dict_Farm_Scales",
+      "required": "Да"
+    },
+    {
+      "field_key": "area_ha",
+      "field_name": "Площадь, га",
+      "input_type": "number",
+      "required": "Нет"
+    },
+    {
+      "field_key": "head_count",
+      "field_name": "Поголовье",
+      "input_type": "number",
+      "required": "Нет"
+    },
+    {
+      "field_key": "processes",
+      "field_name": "Процессы, которые нужно улучшить",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Agri_Processes",
+      "required": "Да"
+    },
+    {
+      "field_key": "problems",
+      "field_name": "Проблемы / боли",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Farmer_Problems",
+      "required": "Да"
+    },
+    {
+      "field_key": "problem_urgency",
+      "field_name": "Срочность проблемы",
+      "input_type": "dropdown",
+      "dictionary_sheet": "Dict_Urgency",
+      "required": "Да"
+    },
+    {
+      "field_key": "budget_rub",
+      "field_name": "Бюджет на внедрение, ₽",
+      "input_type": "number",
+      "required": "Нет"
+    },
+    {
+      "field_key": "current_systems",
+      "field_name": "Текущие системы/интеграции",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Integrations",
+      "required": "Нет"
+    },
+    {
+      "field_key": "digital_maturity",
+      "field_name": "Цифровая зрелость",
+      "input_type": "dropdown",
+      "dictionary_sheet": "Dict_Digital_Maturity",
+      "required": "Да"
+    },
+    {
+      "field_key": "desired_effects",
+      "field_name": "Желаемые эффекты",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_Economic_Effects",
+      "required": "Нет"
+    },
+    {
+      "field_key": "kpi_priority",
+      "field_name": "В какой единице считать эффект",
+      "input_type": "multi_select",
+      "dictionary_sheet": "Dict_KPI_Units",
+      "required": "Нет"
+    },
+    {
+      "field_key": "need_financing",
+      "field_name": "Нужно финансирование/лизинг",
+      "input_type": "dropdown",
+      "dictionary_sheet": "Dict_Yes_No",
+      "required": "Нет"
+    },
+    {
+      "field_key": "free_problem_description",
+      "field_name": "Свободное описание проблемы",
+      "input_type": "long_text",
+      "required": "Нет"
+    }
+  ]
+}

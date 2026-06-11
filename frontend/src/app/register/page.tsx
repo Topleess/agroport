@@ -17,7 +17,6 @@ export default function RegisterPage() {
     middle_name: "",
     email: "",
     phone: "",
-    region: "",
     password: "",
   });
   const [error, setError] = useState("");
@@ -88,12 +87,6 @@ export default function RegisterPage() {
           type="tel"
           autoComplete="tel"
           required
-        />
-        <AuthTextField
-          label="Регион"
-          value={form.region}
-          onChange={(event) => update("region", event.target.value)}
-          autoComplete="address-level1"
         />
         <AuthPasswordField
           label="Придумайте пароль"

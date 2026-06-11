@@ -24,6 +24,20 @@ async def get_current_user(
     return user
 
 
+async def get_current_user_optional(
+    credentials: HTTPAuthorizationCredentials | None = Depends(bearer_scheme),
+) -> User | None:
+    if credentials is None:
+        return None
+    user_id = decode_access_token(credentials.credentials)
+    if user_id is None:
+        return None
+    user = await User.get_or_none(id=int(user_id))
+    if user is None or not user.is_active:
+        return None
+    return user
+
+
 async def require_admin(current_user: User = Depends(get_current_user)) -> User:
     if current_user.is_admin or current_user.email == settings.admin_email:
         return current_user

@@ -80,3 +80,14 @@ export function createOrganizationProduct(id: string | number, payload: Organiza
     body: JSON.stringify(payload),
   });
 }
+
+export function updateOrganizationProduct(
+  organizationId: string | number,
+  productId: string | number,
+  payload: Partial<OrganizationProductPayload>,
+) {
+  return apiRequest<OrganizationProduct>(`/organizations/${organizationId}/products/${productId}`, {
+    method: "PATCH",
+    body: JSON.stringify(payload),
+  });
+}

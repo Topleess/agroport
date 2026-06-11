@@ -8,8 +8,8 @@ import {
   ClipboardCheck,
   FileText,
   PackagePlus,
+  Sparkles,
   Store,
-  UserRound,
   UsersRound,
   type LucideIcon,
 } from "lucide-react";
@@ -17,10 +17,10 @@ import {
 export function getOrganizationNavigationItems(organizationId: string | number): Array<{ label: string; href: string; icon: LucideIcon }> {
   const base = `/app/organizations/${organizationId}`;
   return [
-    { label: "Профиль физлица", href: "/app/profile", icon: UserRound },
     { label: "Профиль организации", href: base, icon: Building2 },
     { label: "Анкета", href: `${base}/questionnaire`, icon: ClipboardCheck },
     { label: "Продукция", href: `${base}/products`, icon: PackagePlus },
+    { label: "Решения", href: `${base}/solutions`, icon: Sparkles },
     { label: "Пользователи", href: `${base}/users`, icon: UsersRound },
     { label: "Заявки", href: `${base}/applications`, icon: FileText },
     { label: "Сервисы", href: `${base}/services`, icon: Store },

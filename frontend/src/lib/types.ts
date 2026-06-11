@@ -73,3 +73,93 @@ export type OrganizationProfile = {
   comment: string | null;
   completion_percent: number;
 };
+
+export type FormOption = {
+  code: string;
+  label: string;
+  level?: number | null;
+  parent_code?: string | null;
+};
+
+export type FormField = {
+  field_key: string;
+  field_name: string;
+  input_type: string;
+  required: boolean;
+  dictionary_code?: string | null;
+  block?: string | null;
+  allow_other_text: boolean;
+  options: FormOption[];
+};
+
+export type FormTemplate = {
+  code: string;
+  name: string;
+  description?: string | null;
+  fields: FormField[];
+};
+
+export type SolutionStatus = "draft" | "pending_moderation" | "published" | "rejected" | string;
+
+export type SolutionSummary = {
+  id: number;
+  supplier_id?: number | null;
+  supplier_name?: string | null;
+  name: string;
+  short_description?: string | null;
+  status: SolutionStatus;
+  updated_at: string;
+  published_at?: string | null;
+  extra_fields: Record<string, unknown>;
+};
+
+export type SolutionDetail = SolutionSummary & {
+  full_description?: string | null;
+  partner_type?: string | null;
+  payment_model?: string | null;
+  implementation_type?: string | null;
+  deployment_type?: string | null;
+  evidence_level?: string | null;
+  price_from?: string | number | null;
+  subsector_ids: string[];
+  process_ids: string[];
+  problem_ids: string[];
+  integration_ids: string[];
+  region_ids: string[];
+  taxonomy_l4_ids: string[];
+};
+
+export type SolutionPayload = Partial<Omit<SolutionDetail, "id" | "updated_at" | "published_at" | "supplier_name">> & {
+  supplier_organization_id?: number;
+};
+
+export type FarmerRequest = {
+  id: number;
+  solution_id?: number | null;
+  solution_name?: string | null;
+  user_id?: number | null;
+  farm_id?: number | null;
+  contact_name: string;
+  contact_email: string;
+  contact_phone?: string | null;
+  organization_name?: string | null;
+  message?: string | null;
+  source: string;
+  region_id?: string | null;
+  problem_ids: string[];
+  urgency?: string | null;
+  budget_rub?: string | number | null;
+  status: string;
+  updated_at: string;
+};
+
+export type NotificationItem = {
+  id: number;
+  title: string;
+  body: string;
+  kind: string;
+  href?: string | null;
+  is_read: boolean;
+  organization_id?: number | null;
+  created_at: string;
+};

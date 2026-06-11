@@ -6,6 +6,7 @@ from app.auth.dependencies import (
     require_organization_member,
     require_organization_owner_or_admin,
 )
+from app.models.admin import ModerationItem
 from app.models.organization import Organization, OrganizationMember, OrganizationProduct, OrganizationProfile
 from app.models.user import User
 from app.schemas.organizations import (
@@ -20,6 +21,7 @@ from app.schemas.organizations import (
     OrganizationResponse,
     OrganizationUpdate,
 )
+from app.services.notifications import create_notification
 
 router = APIRouter(prefix="/organizations", tags=["organizations"])
 
@@ -231,6 +233,33 @@ async def submit_verification(
         )
     organization.verification_status = "pending_verification"
     await organization.save(update_fields=["verification_status", "updated_at"])
+    item, _ = await ModerationItem.get_or_create(
+        object_type="organization",
+        object_id=str(organization.id),
+        defaults={
+            "title": organization.name,
+            "status": "submitted",
+            "priority": "normal",
+            "company_id": organization.id,
+            "created_by_id": organization.created_by_id,
+            "checklist": [],
+        },
+    )
+    item.title = organization.name
+    item.status = "submitted"
+    item.company_id = organization.id
+    await item.save()
+    members = await OrganizationMember.filter(organization=organization).prefetch_related("user")
+    for current_member in members:
+        await create_notification(
+            user=current_member.user,
+            organization=organization,
+            kind="moderation",
+            title="Организация отправлена на проверку",
+            body=f"Организация «{organization.name}» отправлена на модерацию.",
+            href=f"/app/organizations/{organization.id}",
+            payload={"moderation_item_id": item.id, "organization_id": organization.id},
+        )
     return await serialize_organization(organization, member.role)
 
 

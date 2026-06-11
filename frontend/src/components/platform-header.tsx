@@ -26,14 +26,6 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import type { Organization, UserProfile } from "@/lib/types";
 
-const navItems = [
-  { label: "Спрос и продажи", href: "/app/marketplace" },
-  { label: "Инвестиции", href: "/app/finance" },
-  { label: "Субсидии", href: "/app/support" },
-  { label: "Сервисы", href: "/app/services" },
-  { label: "Обучение", href: "/app/learning" },
-];
-
 const navigationGroups: Array<{
   key: string;
   title: string;
@@ -157,6 +149,9 @@ export function PlatformHeader({
   }, [profile]);
 
   const latestOrganization = organizations[0];
+  const otherOrganizations = currentOrganizationId
+    ? organizations.filter((organization) => String(organization.id) !== currentOrganizationId)
+    : [];
   const displayName = profile ? `${profile.first_name} ${profile.last_name}`.trim() : "Пользователь";
   const activeNavigationGroup = navigationGroups.find((group) => group.key === activeNavKey) ?? navigationGroups[0];
   const organizationPanelActions = currentOrganizationId ? getOrganizationNavigationItems(currentOrganizationId) : [];
@@ -183,23 +178,6 @@ export function PlatformHeader({
         <Link href={homeHref} className="mr-1 flex h-12 w-14 shrink-0 items-center justify-center rounded-2xl text-2xl font-black text-white md:mr-3 md:h-14 md:w-20">
           А
         </Link>
-
-        <nav className="hidden max-w-[calc(100vw-350px)] min-w-0 flex-none items-center gap-1 overflow-hidden rounded-xl bg-white/24 p-1.5 backdrop-blur lg:flex">
-          {navItems.map((item) => {
-            const active = pathname.startsWith(item.href);
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`shrink-0 rounded-lg px-3.5 py-3 text-sm font-semibold text-white transition hover:bg-white/18 xl:px-4 ${
-                  active ? "bg-white/22" : ""
-                }`}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
-        </nav>
 
         <div className="ml-auto flex items-center gap-2">
           <button
@@ -407,13 +385,52 @@ export function PlatformHeader({
               ))}
             </nav>
 
-            <div className="mt-6">
-              <div className="flex items-center gap-3 text-sm text-zinc-400">
-                <span>{currentOrganization ? "Другие организации" : "Организация"}</span>
-                <span className="h-px flex-1 bg-zinc-200" />
+            {currentOrganization ? (
+              <div className="mt-6">
+                <div className="flex items-center gap-3 text-sm text-zinc-400">
+                  <span>Личный кабинет и организации</span>
+                  <span className="h-px flex-1 bg-zinc-200" />
+                </div>
+                <div className="mt-4 grid gap-3">
+                  <Link
+                    href="/app/profile"
+                    onClick={closeOverlays}
+                    className="flex min-w-0 items-center gap-4 rounded-2xl p-2 transition hover:bg-zinc-50"
+                  >
+                    <span className="grid size-14 shrink-0 place-items-center rounded-full bg-zinc-100 text-lg font-black text-emerald-700">
+                      {initials}
+                    </span>
+                    <span className="min-w-0">
+                      <span className="block truncate text-lg font-semibold">{displayName}</span>
+                      <span className="block truncate text-base text-zinc-400">Личный кабинет физлица</span>
+                    </span>
+                  </Link>
+                  {otherOrganizations.map((organization) => (
+                    <Link
+                      key={organization.id}
+                      href={`/app/organizations/${organization.id}`}
+                      onClick={closeOverlays}
+                      className="flex min-w-0 items-center gap-4 rounded-2xl p-2 transition hover:bg-zinc-50"
+                    >
+                      <span className="grid size-14 shrink-0 place-items-center rounded-full bg-zinc-100 text-lg font-black text-zinc-700">
+                        {organization.name[0]?.toUpperCase() ?? "О"}
+                      </span>
+                      <span className="min-w-0">
+                        <span className="block truncate text-lg font-semibold">{organization.name}</span>
+                        <span className="block truncate text-base text-zinc-400">Кабинет организации</span>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
               </div>
-              <div className="mt-4 grid gap-3">
-                {latestOrganization && latestOrganization.id !== currentOrganization?.id ? (
+            ) : (
+              <div className="mt-6">
+                <div className="flex items-center gap-3 text-sm text-zinc-400">
+                  <span>Организация</span>
+                  <span className="h-px flex-1 bg-zinc-200" />
+                </div>
+                <div className="mt-4 grid gap-3">
+                  {latestOrganization ? (
                   <Link
                     href={`/app/organizations/${latestOrganization.id}`}
                     onClick={closeOverlays}
@@ -427,19 +444,20 @@ export function PlatformHeader({
                       <span className="block text-base text-zinc-400">Кабинет организации</span>
                     </span>
                   </Link>
-                ) : null}
-                <Link
-                  href="/app/organizations/new"
-                  onClick={closeOverlays}
-                  className="flex items-center gap-4 rounded-2xl p-2 text-lg font-semibold transition hover:bg-zinc-50"
-                >
-                  <span className="grid size-14 shrink-0 place-items-center rounded-full bg-zinc-100">
-                    <Plus size={30} />
-                  </span>
-                  Добавить хозяйство
-                </Link>
+                  ) : null}
+                  <Link
+                    href="/app/organizations/new"
+                    onClick={closeOverlays}
+                    className="flex items-center gap-4 rounded-2xl p-2 text-lg font-semibold transition hover:bg-zinc-50"
+                  >
+                    <span className="grid size-14 shrink-0 place-items-center rounded-full bg-zinc-100">
+                      <Plus size={30} />
+                    </span>
+                    Добавить хозяйство
+                  </Link>
+                </div>
               </div>
-            </div>
+            )}
 
             {onLogout ? (
               <button

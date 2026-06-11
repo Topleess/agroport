@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
-import { ClipboardCheck, FileText, PackagePlus, ShieldCheck, Store, UsersRound } from "lucide-react";
+import { ClipboardCheck, FileText, PackagePlus, ShieldCheck, Sparkles, Store, UsersRound } from "lucide-react";
 import { useEffect, useState } from "react";
 import { OrganizationPageShell } from "@/components/organization-page-shell";
 import { OrganizationDetailSkeleton } from "@/components/skeletons";
@@ -55,6 +55,12 @@ export default function OrganizationDetailPage() {
       description: "Сервисы, рекомендованные для этой организации.",
       href: `/app/organizations/${organization.id}/services`,
       icon: Store,
+    },
+    {
+      label: "Решения",
+      description: "Карточки цифровых решений, публикация и заявки.",
+      href: `/app/organizations/${organization.id}/solutions`,
+      icon: Sparkles,
     },
     {
       label: "Продукция",
